@@ -11,4 +11,5 @@ const light_black_3e4046 = Color(0xFF3e4046);
 const grays_424448 = Color(0xFF424448);
 const hint_txt_909196 = Color(0xFF909196);
 const line_gray_e2e2e6 = Color(0xFFe2e2e6);
+const bg_gray_f1eadc = Color(0xFFf1eadc);
 

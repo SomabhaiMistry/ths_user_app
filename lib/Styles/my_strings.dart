@@ -13,3 +13,5 @@ var str_enter_your_name = "Enter Your Name";
 var str_enter_your_surname = "Enter Your Surname";
 var str_enter_your_email = "Enter Your email";
 var str_date_dob = "18/04/1992";
+var str_tell_us_about_your_problem = "Tell us about your problem";
+var str_no_of_page = "1/3";

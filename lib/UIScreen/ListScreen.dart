@@ -6,6 +6,7 @@ import 'package:ths_user_app/Styles/my_height.dart';
 import 'package:ths_user_app/UIScreen/personal_information.dart';
 import 'package:ths_user_app/UIScreen/spalsh_screen_ui.dart';
 
+import 'about_your_problem.dart';
 import 'all_health_problem.dart';
 import 'login_via_mobile.dart';
 import 'otp_verification.dart';
@@ -142,6 +143,25 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
                     child: Text(
                       "AllHealthProblems Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: sfProDisplayMedium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AboutYourProblem(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
+                    child: Text(
+                      "AboutYourProblem Screen",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: sfProDisplayMedium,
