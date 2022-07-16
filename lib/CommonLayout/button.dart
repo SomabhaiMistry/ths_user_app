@@ -20,7 +20,7 @@ class Button extends StatelessWidget {
               btnTitle,
               style: TextStyle(
                   color: Colors.white,
-                  fontSize: 16,
+                  fontSize: 16.sp,
                   fontFamily: interSemibold),
             ),
             onPressed: () {},
@@ -28,9 +28,9 @@ class Button extends StatelessWidget {
               primary: bg_btn_199a8e,
               onPrimary: Colors.white,
               elevation: 0,
-              padding: EdgeInsets.symmetric(horizontal: 0, vertical: 16),
+              padding: EdgeInsets.symmetric(horizontal: 0, vertical: 16.h),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(6),
+                borderRadius: BorderRadius.circular(18.r),
                 // side: BorderSide(color: skygreen_24d39e, width: 0),
               ),
             )),
