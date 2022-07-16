@@ -5,6 +5,8 @@ import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 import 'package:ths_user_app/Styles/my_icons.dart';
 
+import '../Styles/my_strings.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -24,24 +26,27 @@ class _SplashScreenState extends State<SplashScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-
-              Image.asset(demo),
-
-              SvgPicture.asset(icon_add_friends),
-              SvgPicture.asset(icon_logo,height: 50.h,width: 50.w,),
-              SizedBox(height: 30.h,),
-              Text("Total Health Solutions",style: TextStyle(
-                fontSize: 20.sp,
-                color: light_gray_f4f7f5,
-                fontFamily: poppinsBold
-              ),),
-              SizedBox(height: 5.2.h,),
-              Text("Where Health Meets Comfort",style: TextStyle(
-                fontSize: 14.sp,
-                color: light_gray_f4f7f5,
-                fontFamily: robotoRegular
-              ),),
-
+              Image.asset(icon_logo,width: 88.w,height: 48.w,),
+              SizedBox(
+                height: 30.h,
+              ),
+              Text(
+                str_total_health_solutions,
+                style: TextStyle(
+                    fontSize: 20.sp,
+                    color: light_gray_f4f7f5,
+                    fontFamily: poppinsBold),
+              ),
+              SizedBox(
+                height: 5.2.h,
+              ),
+              Text(
+                str_where_health_meets_comfort,
+                style: TextStyle(
+                    fontSize: 14.sp,
+                    color: light_gray_f4f7f5,
+                    fontFamily: robotoRegular),
+              ),
             ],
           ),
         ),
