@@ -13,7 +13,7 @@ class ToolbarWithTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(vertical: 26.3.h,horizontal: 16.3.w),
+      padding: EdgeInsets.symmetric(vertical: 26.3.h,horizontal: 14.w),
       color: Colors.white,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,

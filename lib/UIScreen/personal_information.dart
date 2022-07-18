@@ -27,13 +27,13 @@ class _PersonalInformationState extends State<PersonalInformation> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-
               Expanded(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     ToolbarWithTitle(str_your_information ),
+
                     Container(
                       margin: EdgeInsets.only(top: 20.h,left: 14.w),
                       child: Text(str_personal_info,style: TextStyle(
@@ -172,8 +172,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                         color: Colors.white,
                         boxShadow: [
                           BoxShadow(
-                            color:
-                            Color(0x0f041d42),
+                            color:shadow_0x0f041d42,
                             offset: const Offset(3.0, 5.0,),
                             blurRadius: 3.0,
                             spreadRadius: 1.0,
@@ -215,11 +214,11 @@ class _PersonalInformationState extends State<PersonalInformation> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Age :",style: TextStyle(
+                                Text(str_age,style: TextStyle(
                                     fontSize: 14.sp,color: hint_txt_909196,fontFamily: interSemibold
                                 ),),
                                 SizedBox(width: 5.w,),
-                                Text("29",style: TextStyle(
+                                Text(str_twenty_nine,style: TextStyle(
                                     fontSize: 14.sp,color: grays_424448,fontFamily: interSemibold
                                 ),),
                               ],
@@ -237,6 +236,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                           color: light_black_3e4046
                       ),),
                     ),
+
                     Container(
                       margin: EdgeInsets.only(left: 14.w,right: 14.w,top: 16.h),
                       child: Row(
@@ -250,7 +250,15 @@ class _PersonalInformationState extends State<PersonalInformation> {
                               padding: EdgeInsets.symmetric(vertical: 16.h),
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(14.r)
+                                  borderRadius: BorderRadius.circular(14.r),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color:shadow_0x0f041d42,
+                                    offset: const Offset(3.0, 5.0,),
+                                    blurRadius: 3.0,
+                                    spreadRadius: 1.0,
+                                  ), //BoxShadow
+                                ],
                               ),
                               child:Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -258,7 +266,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                                 children: [
                                   Image.asset(img_other,height: 36.h,width: 36.w,),
                                   SizedBox(height: 14.h,),
-                                  Text("Male",style: TextStyle(
+                                  Text(str_male,style: TextStyle(
                                       fontFamily: interSemibold,color: hint_txt_909196,fontSize: 14.sp
                                   ),)
 
@@ -271,7 +279,15 @@ class _PersonalInformationState extends State<PersonalInformation> {
                               padding: EdgeInsets.symmetric(vertical: 16.h),
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(14.r)
+                                  borderRadius: BorderRadius.circular(14.r),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color:shadow_0x0f041d42,
+                                    offset: const Offset(3.0, 5.0,),
+                                    blurRadius: 3.0,
+                                    spreadRadius: 1.0,
+                                  ), //BoxShadow
+                                ],
                               ),
                               child:Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -279,7 +295,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                                 children: [
                                   Image.asset(img_female,height: 36.h,width: 36.w,),
                                   SizedBox(height: 14.h,),
-                                  Text("Female",style: TextStyle(
+                                  Text(str_female,style: TextStyle(
                                       fontFamily: interSemibold,color: hint_txt_909196,fontSize: 14.sp
                                   ),)
 
@@ -293,7 +309,15 @@ class _PersonalInformationState extends State<PersonalInformation> {
                               padding: EdgeInsets.symmetric(vertical: 16.h),
                               decoration: BoxDecoration(
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(14.r)
+                                  borderRadius: BorderRadius.circular(14.r),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color:shadow_0x0f041d42,
+                                    offset: const Offset(3.0, 5.0,),
+                                    blurRadius: 3.0,
+                                    spreadRadius: 1.0,
+                                  ), //BoxShadow
+                                ],
                               ),
                               child:Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -301,7 +325,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                                 children: [
                                   Image.asset(img_other,height: 36.h,width: 36.w,),
                                   SizedBox(height: 14.h,),
-                                  Text("Other",style: TextStyle(
+                                  Text(str_other,style: TextStyle(
                                       fontFamily: interSemibold,color: hint_txt_909196,fontSize: 14.sp
                                   ),)
 
@@ -315,11 +339,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                   ],
                 ),
               ),
-
-
-
               Button(str_next)
-
             ],
           ),
         ));
