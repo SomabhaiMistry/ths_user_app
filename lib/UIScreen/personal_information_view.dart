@@ -284,7 +284,9 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                   ],
                 ),
               ),
-              Button(str_next)
+              Container(
+                  margin: EdgeInsets.only(bottom: 24.h),
+                  child: Button(str_next)),
             ],
           ),
         ));

@@ -12,7 +12,7 @@ class Button extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left: 14.w, right: 14.w, bottom: 25.h),
+      margin: EdgeInsets.only(left: 14.w, right: 14.w),
       child: SizedBox(
         width: double.infinity,
         child: ElevatedButton(

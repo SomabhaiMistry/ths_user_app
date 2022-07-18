@@ -73,7 +73,9 @@ class _SelectYourCityViewState extends State<SelectYourCityView> {
                 ),
               ),
             ),
-            Button(str_next)
+            Container(
+                margin: EdgeInsets.only(bottom: 24.h),
+                child: Button(str_next)),
           ],
         ),
       ),
