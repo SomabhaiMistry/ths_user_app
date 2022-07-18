@@ -17,4 +17,5 @@ const silver_box_f9fafb = Color(0xFFf9fafb);
 const silver_border_e5e7eb = Color(0xFFe5e7eb);
 const shadow_0x0f041d42 = Color(0x0f041d42);
 const orange_f3a581 = Color(0xFFf3a581);
+const smoke_f5f5f5 = Color(0xFFf5f5f5);
 

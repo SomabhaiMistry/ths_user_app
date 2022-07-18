@@ -6,17 +6,18 @@ import 'package:ths_user_app/Model/ConsultationModel.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 
+import '../CommonLayout/box_shadow.dart';
 import '../CommonLayout/toolbar_with_title.dart';
 import '../Styles/my_icons.dart';
 import '../Styles/my_strings.dart';
-class ConsultationForJointPain extends StatefulWidget {
-  const ConsultationForJointPain({Key? key}) : super(key: key);
+class ConsultationForJointPainView extends StatefulWidget {
+  const ConsultationForJointPainView({Key? key}) : super(key: key);
 
   @override
-  State<ConsultationForJointPain> createState() => _ConsultationForJointPainState();
+  State<ConsultationForJointPainView> createState() => _ConsultationForJointPainViewState();
 }
 
-class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
+class _ConsultationForJointPainViewState extends State<ConsultationForJointPainView> {
   List<ConsultationModel> consultationList = [
     ConsultationModel(img_food1,"Dr. Niraj Patel","Orthopedist","9 Years","455","4:30 pm"),
     ConsultationModel(img_food2,"Dr. Niraj Patel","Orthopedist","9 Years","455","4:30 pm"),
@@ -31,7 +32,6 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           ToolbarWithTitle(str_consultation_for_joint_pain),
-
 
           Container(
             width: double.infinity,
@@ -50,18 +50,7 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
             itemBuilder: (context, i) =>
                 Container(
                   margin: EdgeInsets.only(left: 14.w,right: 14.w,top: 15.h),
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(20.r),
-                    boxShadow: [
-                      BoxShadow(
-                        color:shadow_0x0f041d42,
-                        offset: const Offset(3.0, 5.0,),
-                        blurRadius: 3.0,
-                        spreadRadius: 1.0,
-                      ), //BoxShadow
-                    ],
-                  ),
+                  decoration: boxDecoration,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,7 +61,7 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Container(
+                            SizedBox(
                               width: 85.w,
                               height: 96.h,
                               child: ClipRRect(
@@ -95,7 +84,7 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
                                     fontSize: 12.sp,color: silver_67696c,fontFamily: circularXXTTTrialRegular
                                 ),),
                                 SizedBox(height: 12.h,),
-                                Text("Exp - "+consultationList[i].tvExperience,style: TextStyle(
+                                Text(str_exp+consultationList[i].tvExperience,style: TextStyle(
                                     fontSize: 12.sp,color: grays_424448
                                 ),),
                                 SizedBox(height: 3.h,),
@@ -103,7 +92,7 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(consultationList[i].tvConsultations+" Consultations",style: TextStyle(
+                                    Text(consultationList[i].tvConsultations+str_consultations,style: TextStyle(
                                         fontSize: 12.sp,color: silver_67696c,fontFamily: circularXXTTTrialRegular
                                     ),),
                                     SizedBox(width: 4.w,),
@@ -129,7 +118,7 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
                             flex: 1,
                             child: Container(
                               padding: EdgeInsets.symmetric(vertical: 16.h),
-                              child: Text("Next Available : "+consultationList[i].tvNextTime,style: TextStyle(
+                              child: Text(str_next_available+consultationList[i].tvNextTime,style: TextStyle(
                                   fontFamily: interSemibold,color: bg_btn_199a8e,fontSize: 13.sp
                               ),
                                 textAlign: TextAlign.center,),
@@ -147,7 +136,7 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
                                 ),
                               ),
                               padding: EdgeInsets.symmetric(vertical: 16.h,horizontal: 15.w),
-                              child: Text("CONSULT NOW",style: TextStyle(
+                              child: Text(str_consult_now,style: TextStyle(
                                   fontFamily: interBold,color: Colors.white,fontSize: 13.sp
                               ),
                                 textAlign: TextAlign.center,),
@@ -155,19 +144,10 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
                           ),
                         ],
                       )
-
                     ],
                   ),
-
-
                 )
-
           ),
-
-
-
-
-
         ],
       ),
     ));
@@ -179,9 +159,9 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
         context: context,
         builder: (context) {
           return Container(
-              decoration: new BoxDecoration(
+              decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: new BorderRadius.only(
+                  borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(30.r),
                       topRight: Radius.circular(30.r))),
               child: Wrap(
@@ -207,7 +187,7 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           mainAxisSize: MainAxisSize.max,
                           children: [
-                            Container(
+                            SizedBox(
                               width: 85.w,
                               height: 96.h,
                               child: ClipRRect(
@@ -222,15 +202,15 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Dr. Shreeja Maheshwar",style: TextStyle(
+                                Text(str_dr_name,style: TextStyle(
                                     fontSize: 17.sp,color: Colors.black,fontFamily: circularXXTTTrialMedium
                                 ),),
                                 SizedBox(height: 4.h,),
-                                Text("Orthopedist",style: TextStyle(
+                                Text(str_Orthopedist,style: TextStyle(
                                     fontSize: 12.sp,color: silver_67696c,fontFamily: circularXXTTTrialRegular
                                 ),),
                                 SizedBox(height: 12.h,),
-                                Text("Exp - 12 Years",style: TextStyle(
+                                Text(str_exp_12_years,style: TextStyle(
                                     fontSize: 12.sp,color: grays_424448
                                 ),),
                                 SizedBox(height: 3.h,),
@@ -238,7 +218,7 @@ class _ConsultationForJointPainState extends State<ConsultationForJointPain> {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("455 Consultations",style: TextStyle(
+                                    Text(str_455_consultations,style: TextStyle(
                                         fontSize: 12.sp,color: silver_67696c,fontFamily: circularXXTTTrialRegular
                                     ),),
                                     SizedBox(width: 4.w,),
