@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
+import 'package:ths_user_app/CommonLayout/button.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 
@@ -58,7 +59,7 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
             child: Container(
               alignment: Alignment.topCenter,
               child: SizedBox(
-                width: 200.w,
+                width: 220.w,
                 child: Theme(
                   data: ThemeData(
                     primaryColor: Colors.black,
@@ -84,8 +85,8 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
                     pinTheme: PinTheme(
                         shape: PinCodeFieldShape.box,
                         borderRadius: BorderRadius.circular(12.r),
-                        fieldHeight: 50,
-                        fieldWidth: 50,
+                        fieldHeight: 53,
+                        fieldWidth: 53,
                         borderWidth: 1,
                         activeFillColor: bg_gray_f1eadc,
                         inactiveColor: silver_border_e5e7eb,
@@ -123,31 +124,9 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
               ),
             ),
           ),
-            Container(
-              margin: EdgeInsets.only(left: 14.w, right: 14.w, bottom: 14.h),
-              child: SizedBox(
-                width: double.infinity,
-                child: ElevatedButton(
-                    child: Text(
-                      str_verify,
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16.sp,
-                          fontFamily: interSemibold),
-                    ),
-                    onPressed: () {},
-                    style: ElevatedButton.styleFrom(
-                      primary: bg_btn_199a8e,
-                      onPrimary: Colors.white,
-                      elevation: 0,
-                      padding: EdgeInsets.symmetric(horizontal: 0, vertical: 16.h),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.r),
-                        // side: BorderSide(color: skygreen_24d39e, width: 0),
-                      ),
-                    )),
-              ),
-            ),
+          Container(
+              margin: EdgeInsets.only(bottom: 14.h),
+              child: Button(str_verify)),
           Container(
             margin: EdgeInsets.only(top: 0.h,bottom: 20.h),
             child: Center(
