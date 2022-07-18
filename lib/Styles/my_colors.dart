@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 
 const white_ffffff = Color(0xFFffffff);
 const bg_btn_199a8e = Color(0xFF199a8e);
+const light_green_11199a8e = Color(0x11199a8e);
 const light_gray_f4f7f5 = Color(0xFFf4f7f5);
 const bg_gray_f0f0f4 = Color(0xFFf0f0f4);
 const title_black_15181e = Color(0xFF15181e);
@@ -17,6 +18,7 @@ const silver_box_f9fafb = Color(0xFFf9fafb);
 const silver_border_e5e7eb = Color(0xFFe5e7eb);
 const shadow_0x0f041d42 = Color(0x0f041d42);
 const orange_f3a581 = Color(0xFFf3a581);
+const orange_light_f1eadc = Color(0xFFf1eadc);
 const smoke_f5f5f5 = Color(0xFFf5f5f5);
 const orange_df6129 = Color(0xFFdf6129);
 const light_orange_FCEFE6 = Color(0xFFFCEFE6);

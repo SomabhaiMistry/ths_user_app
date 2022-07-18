@@ -6,6 +6,7 @@ import 'package:ths_user_app/CommonLayout/button.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 
 import '../CommonLayout/box_shadow.dart';
+import '../CommonLayout/green_box_shadow.dart';
 import '../CommonLayout/toolbar_with_title.dart';
 import '../Styles/my_colors.dart';
 import '../Styles/my_icons.dart';
@@ -19,6 +20,11 @@ class PersonalInformationView extends StatefulWidget {
 }
 
 class _PersonalInformationViewState extends State<PersonalInformationView> {
+
+  bool isMale = false;
+  bool isFemale = false;
+  bool isOther = false;
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -223,43 +229,62 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                         children: [
 
                           Expanded(
-                            child: Container(
-                              margin: EdgeInsets.only(right: 10.w),
-                              padding: EdgeInsets.symmetric(vertical: 16.h),
-                              decoration:boxDecoration,
-                              child:Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Image.asset(img_other,height: 36.h,width: 36.w,),
-                                  SizedBox(height: 14.h,),
-                                  Text(str_male,style: TextStyle(
-                                      fontFamily: interSemibold,color: hint_txt_909196,fontSize: 14.sp
-                                  ),)
+                            child: GestureDetector(
+                              onTap: (){
+                                setState(() {
+                                  isMale = true;
+                                  isFemale = false;
+                                  isOther = false;
+                                });
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(right: 10.w),
+                                padding: EdgeInsets.symmetric(vertical: 16.h),
+                                decoration:isMale?boxDecorationGreen:boxDecoration,
+                                child:Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Image.asset(img_other,height: 36.h,width: 36.w,color: isMale?Colors.white:hint_txt_909196,),
+                                    SizedBox(height: 14.h,),
+                                    Text(str_male,style: TextStyle(
+                                        fontFamily: interSemibold,color: isMale?Colors.white:hint_txt_909196,fontSize: 14.sp
+                                    ),)
 
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           ),
                           Expanded(
-                            child: Container(
-                              padding: EdgeInsets.symmetric(vertical: 16.h),
-                              decoration: boxDecoration,
-                              child:Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Image.asset(img_female,height: 36.h,width: 36.w,),
-                                  SizedBox(height: 14.h,),
-                                  Text(str_female,style: TextStyle(
-                                      fontFamily: interSemibold,color: hint_txt_909196,fontSize: 14.sp
-                                  ),)
+                            child: GestureDetector(
+                              onTap: (){
+                                setState(() {
+                                  isMale = false;
+                                  isFemale = true;
+                                  isOther = false;
+                                });
+                              },
+                              child: Container(
+                                padding: EdgeInsets.symmetric(vertical: 16.h),
+                                decoration:isFemale?boxDecorationGreen:boxDecoration,
+                                child:Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Image.asset(img_female,height: 36.h,width: 36.w,color: isFemale?Colors.white:hint_txt_909196,),
+                                    SizedBox(height: 14.h,),
+                                    Text(str_female,style: TextStyle(
+                                        fontFamily: interSemibold,color: isFemale?Colors.white:hint_txt_909196,fontSize: 14.sp
+                                    ),)
 
-                                ],
+                                  ],
+                                ),
                               ),
                             ),
                           ),
                           Expanded(
+
                             child: Container(
                               margin: EdgeInsets.only(left: 10.w),
                               padding: EdgeInsets.symmetric(vertical: 16.h),
@@ -274,6 +299,32 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                                       fontFamily: interSemibold,color: hint_txt_909196,fontSize: 14.sp
                                   ),)
                                 ],
+
+                            child: GestureDetector(
+                              onTap: (){
+                                setState(() {
+                                  isMale = false;
+                                  isFemale = false;
+                                  isOther = true;
+                                });
+                              },
+                              child: Container(
+                                margin: EdgeInsets.only(left: 10.w),
+                                padding: EdgeInsets.symmetric(vertical: 16.h),
+                                decoration:isOther?boxDecorationGreen:boxDecoration,
+                                child:Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Image.asset(img_other,height: 36.h,width: 36.w,color: isOther?Colors.white:hint_txt_909196,),
+                                    SizedBox(height: 14.h,),
+                                    Text(str_other,style: TextStyle(
+                                        fontFamily: interSemibold,color: isOther?Colors.white:hint_txt_909196,fontSize: 14.sp
+                                    ),)
+
+                                  ],
+                                ),
+
                               ),
                             ),
                           ),

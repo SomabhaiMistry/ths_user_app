@@ -8,6 +8,7 @@ import 'package:ths_user_app/UIScreen/select_subscription_plan_view.dart';
 import 'package:ths_user_app/UIScreen/select_time_sloat_view.dart';
 import 'package:ths_user_app/UIScreen/spalsh_screen_view.dart';
 
+import 'AboutYourProblemView.dart';
 import 'about_your_problem_view.dart';
 import 'all_health_problem_view.dart';
 import 'consultation_for_joint_pain_view.dart';
@@ -153,25 +154,25 @@ class ListScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => AboutYourProblemView(),
-                        ));
-                  },
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
-                    child: Text(
-                      "AboutYourProblem Screen",
-                      style: TextStyle(
-                          color: Colors.black87,
-                          fontFamily: sfProDisplayMedium,
-                          fontSize: 16.sp),
-                    ),
-                  ),
-                ),
+                // GestureDetector(
+                //   onTap: () {
+                //     Navigator.push(
+                //         context,
+                //         MaterialPageRoute(
+                //           builder: (context) => AboutYourProblemView(),
+                //         ));
+                //   },
+                //   child: Padding(
+                //     padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
+                //     child: Text(
+                //       "AboutYourProblem Screen",
+                //       style: TextStyle(
+                //           color: Colors.black87,
+                //           fontFamily: sfProDisplayMedium,
+                //           fontSize: 16.sp),
+                //     ),
+                //   ),
+                // ),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -190,7 +191,8 @@ class ListScreen extends StatelessWidget {
                           fontSize: 16.sp),
                     ),
                   ),
-                ), GestureDetector(
+                ),
+                GestureDetector(
                   onTap: () {
                     Navigator.push(
                         context,
@@ -208,7 +210,8 @@ class ListScreen extends StatelessWidget {
                           fontSize: 16.sp),
                     ),
                   ),
-                ), GestureDetector(
+                ),
+                GestureDetector(
                   onTap: () {
                     Navigator.push(
                         context,
@@ -220,6 +223,25 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
                     child: Text(
                       "SelectSubscriptionPlan Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: sfProDisplayMedium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => AboutYourProblemView(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
+                    child: Text(
+                      "AboutYourProblemView Screen",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: sfProDisplayMedium,
