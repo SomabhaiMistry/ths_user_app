@@ -23,6 +23,7 @@ var str_twenty_nine = "29";
 var str_male = "Male";
 var str_female = "Female";
 var str_other = "Other";
+var str_have_you_had = "Have you had any injuries in the past?er";
 var str_mobile_verification = "Mobile Verification";
 var str_enter_verification_code = "Enter Verification Code";
 var str_enter_verification_code_send_your_mobile_no = "Enter code that we have sent to your number";
