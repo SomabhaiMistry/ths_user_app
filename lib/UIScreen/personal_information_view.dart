@@ -273,7 +273,6 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                                   Text(str_other,style: TextStyle(
                                       fontFamily: interSemibold,color: hint_txt_909196,fontSize: 14.sp
                                   ),)
-
                                 ],
                               ),
                             ),

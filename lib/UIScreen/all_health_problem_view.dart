@@ -33,21 +33,18 @@ class _AllHealthProblemsViewState extends State<AllHealthProblemsView> {
     return SafeArea(
         child: Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ToolbarWithTitle(str_all_health_problems),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ToolbarWithTitle(str_all_health_problems),
 
-            Container(
-              width: double.infinity,
-              height: 1,
-              color: line_gray_e2e2e6,
-            ),
+          Container(width: double.infinity, height: 1, color: line_gray_e2e2e6,),
 
-            SizedBox(height: 21.h,),
-            ListView.builder(
+          SizedBox(height: 21.h,),
+
+          Expanded(
+            child: ListView.builder(
               scrollDirection: Axis.vertical,
               primary: false,
               shrinkWrap: true,
@@ -73,8 +70,8 @@ class _AllHealthProblemsViewState extends State<AllHealthProblemsView> {
                     ),
                   ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     ));
   }

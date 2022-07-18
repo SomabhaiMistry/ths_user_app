@@ -59,7 +59,7 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
             child: Container(
               alignment: Alignment.topCenter,
               child: SizedBox(
-                width: 200.w,
+                width: 220.w,
                 child: Theme(
                   data: ThemeData(
                     primaryColor: Colors.black,
@@ -85,8 +85,8 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
                     pinTheme: PinTheme(
                         shape: PinCodeFieldShape.box,
                         borderRadius: BorderRadius.circular(12.r),
-                        fieldHeight: 50,
-                        fieldWidth: 50,
+                        fieldHeight: 53,
+                        fieldWidth: 53,
                         borderWidth: 1,
                         activeFillColor: bg_gray_f1eadc,
                         inactiveColor: silver_border_e5e7eb,
