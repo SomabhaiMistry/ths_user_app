@@ -5,31 +5,19 @@ import 'package:flutter_svg/svg.dart';
 import '../Styles/my_colors.dart';
 import '../Styles/my_font.dart';
 import '../Styles/my_icons.dart';
+import 'box_shadow.dart';
 
 class SearchBar extends StatelessWidget {
 
   final String title;
   SearchBar(this.title);
 
-
 @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(right: 14.w, left: 14.w),
       padding: EdgeInsets.symmetric(vertical: 11.h, horizontal: 16.3.w),
-      decoration: BoxDecoration(
-        border: Border.all(color: Colors.white, width: 1.w),
-        borderRadius: BorderRadius.all(Radius.circular(14.r)),
-        color: Colors.white,
-        boxShadow: [
-          BoxShadow(
-            color:shadow_0x0f041d42,
-            offset: const Offset(3.0, 5.0,),
-            blurRadius: 3.0,
-            spreadRadius: 1.0,
-          ), //BoxShadow
-        ],
-      ),
+      decoration: boxDecoration,
       child: Row(
         children: [
           SvgPicture.asset(icon_search),

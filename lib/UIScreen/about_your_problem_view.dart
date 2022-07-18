@@ -4,18 +4,19 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 
+import '../CommonLayout/box_shadow.dart';
 import '../Styles/my_font.dart';
 import '../Styles/my_icons.dart';
 import '../Styles/my_strings.dart';
 
-class AboutYourProblem extends StatefulWidget {
-  const AboutYourProblem({Key? key}) : super(key: key);
+class AboutYourProblemView extends StatefulWidget {
+  const AboutYourProblemView({Key? key}) : super(key: key);
 
   @override
-  State<AboutYourProblem> createState() => _AboutYourProblemState();
+  State<AboutYourProblemView> createState() => _AboutYourProblemViewState();
 }
 
-class _AboutYourProblemState extends State<AboutYourProblem> {
+class _AboutYourProblemViewState extends State<AboutYourProblemView> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -78,20 +79,9 @@ class _AboutYourProblemState extends State<AboutYourProblem> {
 
 
           Container(
-
             margin: EdgeInsets.only(left: 14.w,right: 14.w,top: 16.h),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(14.r),
-              color: Colors.white,
-              boxShadow: [
-                BoxShadow(
-                  color:shadow_0x0f041d42,
-                  offset: const Offset(3.0, 5.0,),
-                  blurRadius: 3.0,
-                  spreadRadius: 1.0,
-                ), //BoxShadow
-              ],
-            ),child: Column(
+            decoration: boxDecoration,
+            child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -105,13 +95,9 @@ class _AboutYourProblemState extends State<AboutYourProblem> {
                     Text(str_yes,style: TextStyle(
                       fontFamily: interBold,fontSize: 14.sp,color:grays_424448
                     ),),
-
-
-
                   ],
                 ),
               )
-
             ],
           ),
           )

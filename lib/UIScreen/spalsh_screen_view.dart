@@ -1,20 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/src/size_extension.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 import 'package:ths_user_app/Styles/my_icons.dart';
 
 import '../Styles/my_strings.dart';
 
-class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+class SplashScreenView extends StatefulWidget {
+  const SplashScreenView({Key? key}) : super(key: key);
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  State<SplashScreenView> createState() => _SplashScreenViewState();
 }
 
-class _SplashScreenState extends State<SplashScreen> {
+class _SplashScreenViewState extends State<SplashScreenView> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

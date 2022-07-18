@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ths_user_app/CommonLayout/button.dart';
 import 'package:ths_user_app/CommonLayout/toolbar_with_title.dart';
 import 'package:ths_user_app/Model/SelectCityModel.dart';
@@ -9,17 +8,16 @@ import 'package:ths_user_app/Styles/my_colors.dart';
 
 import '../CommonLayout/searchbar.dart';
 import '../Styles/my_font.dart';
-import '../Styles/my_icons.dart';
 import '../Styles/my_strings.dart';
 
-class SelectYourCity extends StatefulWidget {
-  const SelectYourCity({Key? key}) : super(key: key);
+class SelectYourCityView extends StatefulWidget {
+  const SelectYourCityView({Key? key}) : super(key: key);
 
   @override
-  State<SelectYourCity> createState() => _SelectYourCityState();
+  State<SelectYourCityView> createState() => _SelectYourCityViewState();
 }
 
-class _SelectYourCityState extends State<SelectYourCity> {
+class _SelectYourCityViewState extends State<SelectYourCityView> {
   int position = 7;
   List<SelectCityModel> selectCityList = [
     SelectCityModel("Surat", id: 1),
