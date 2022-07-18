@@ -11,8 +11,8 @@ final boxDecoration = BoxDecoration(
           3.0,
           5.0,
         ),
-        blurRadius: 3.0,
-        spreadRadius: 1.0,
+        blurRadius: 7.0,
+        spreadRadius: 5.0,
       )
     ],
     borderRadius: BorderRadius.all(Radius.circular(14.r)));
