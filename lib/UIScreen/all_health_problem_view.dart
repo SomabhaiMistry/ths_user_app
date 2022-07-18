@@ -9,14 +9,14 @@ import 'package:ths_user_app/Styles/my_icons.dart';
 import '../CommonLayout/toolbar_with_title.dart';
 import '../Styles/my_strings.dart';
 
-class AllHealthProblems extends StatefulWidget {
-  const AllHealthProblems({Key? key}) : super(key: key);
+class AllHealthProblemsView extends StatefulWidget {
+  const AllHealthProblemsView({Key? key}) : super(key: key);
 
   @override
-  State<AllHealthProblems> createState() => _AllHealthProblemsState();
+  State<AllHealthProblemsView> createState() => _AllHealthProblemsViewState();
 }
 
-class _AllHealthProblemsState extends State<AllHealthProblems> {
+class _AllHealthProblemsViewState extends State<AllHealthProblemsView> {
   List<HealthProblemModel> healthProblemList = [
     HealthProblemModel(icon_logo,"Skin & Hair"),
     HealthProblemModel(icon_logo,"Covid"),

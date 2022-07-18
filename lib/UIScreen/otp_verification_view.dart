@@ -2,21 +2,20 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
-import 'package:ths_user_app/CommonLayout/button.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 
 import '../CommonLayout/toolbar_with_title.dart';
 import '../Styles/my_strings.dart';
 
-class OtpVerification extends StatefulWidget {
-  const OtpVerification({Key? key}) : super(key: key);
+class OtpVerificationView extends StatefulWidget {
+  const OtpVerificationView({Key? key}) : super(key: key);
 
   @override
-  State<OtpVerification> createState() => _OtpVerificationState();
+  State<OtpVerificationView> createState() => _OtpVerificationViewState();
 }
 
-class _OtpVerificationState extends State<OtpVerification> {
+class _OtpVerificationViewState extends State<OtpVerificationView> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -65,13 +64,13 @@ class _OtpVerificationState extends State<OtpVerification> {
                     primaryColor: Colors.black,
                     primaryColorDark: Colors.black,
                     focusColor: Colors.black,
-                    textSelectionTheme: TextSelectionThemeData(
+                    textSelectionTheme: const TextSelectionThemeData(
                       cursorColor: Colors.black, //thereby
                     ),
                   ),
                   child: PinCodeTextField(
                     appContext: context,
-                    pastedTextStyle: TextStyle(
+                    pastedTextStyle: const TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
                     ),
@@ -91,12 +90,12 @@ class _OtpVerificationState extends State<OtpVerification> {
                         activeFillColor: bg_gray_f1eadc,
                         inactiveColor: silver_border_e5e7eb,
                         inactiveFillColor: silver_box_f9fafb,
-                        errorBorderColor: Color(0xfff5f5f5),
-                        activeColor: Color(0xfff5f5f5),
+                        errorBorderColor: smoke_f5f5f5,
+                        activeColor: smoke_f5f5f5,
                         selectedColor: silver_border_e5e7eb,
                         selectedFillColor:silver_border_e5e7eb),
                     cursorColor: Colors.black,
-                    animationDuration: Duration(milliseconds: 300),
+                    animationDuration: const Duration(milliseconds: 300),
                     enableActiveFill: true,
                     keyboardType: TextInputType.number,
                     boxShadows: [

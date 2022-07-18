@@ -5,19 +5,20 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:ths_user_app/CommonLayout/button.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 
+import '../CommonLayout/box_shadow.dart';
 import '../CommonLayout/toolbar_with_title.dart';
 import '../Styles/my_colors.dart';
 import '../Styles/my_icons.dart';
 import '../Styles/my_strings.dart';
 
-class PersonalInformation extends StatefulWidget {
-  const PersonalInformation({Key? key}) : super(key: key);
+class PersonalInformationView extends StatefulWidget {
+  const PersonalInformationView({Key? key}) : super(key: key);
 
   @override
-  State<PersonalInformation> createState() => _PersonalInformationState();
+  State<PersonalInformationView> createState() => _PersonalInformationViewState();
 }
 
-class _PersonalInformationState extends State<PersonalInformation> {
+class _PersonalInformationViewState extends State<PersonalInformationView> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -46,19 +47,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                     Container(
                       padding: EdgeInsets.symmetric(vertical: 16.h),
                       margin: EdgeInsets.only(left: 14.w,right: 14.w,top: 16.h),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(14.r),
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color:
-                            Color(0x0f041d42),
-                            offset: const Offset(3.0, 5.0,),
-                            blurRadius: 3.0,
-                            spreadRadius: 1.0,
-                          ), //BoxShadow
-                        ],
-                      ),
+                      decoration: boxDecoration,
                       child:Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -72,13 +61,13 @@ class _PersonalInformationState extends State<PersonalInformation> {
                                   color: grays_424448,
                                   fontFamily: interSemibold,
                                   fontSize: 14.0),
-                              decoration: new InputDecoration(
+                              decoration: InputDecoration(
                                 isDense: true,
                                 hintText: str_enter_your_name,
                                 hintStyle: TextStyle(
                                     color: hint_txt_909196,
                                     fontFamily: interSemibold,
-                                    fontSize: 14.0),
+                                    fontSize: 14.sp),
                                 border: InputBorder.none,
                               ),
                               keyboardType: TextInputType.text,
@@ -86,7 +75,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                             ),
                           ),
                           SizedBox(height: 10.h,),
-                          DottedLine(
+                          const DottedLine(
                             direction: Axis.horizontal,
                             // lineLength: 50,
                             lineThickness: 1.0,
@@ -101,17 +90,17 @@ class _PersonalInformationState extends State<PersonalInformation> {
                             margin: EdgeInsets.only(left: 14.w,right: 14.w,top:10.h),
                             child: TextField(
                               // controller: titleController,
-                              style: const TextStyle(
+                              style: TextStyle(
                                   color: grays_424448,
                                   fontFamily: interSemibold,
-                                  fontSize: 14.0),
-                              decoration: new InputDecoration(
+                                  fontSize: 14.sp),
+                              decoration: InputDecoration(
                                 isDense: true,
                                 hintText: str_enter_your_surname,
                                 hintStyle: TextStyle(
                                     color: hint_txt_909196,
                                     fontFamily: interSemibold,
-                                    fontSize: 14.0),
+                                    fontSize: 14.sp),
                                 border: InputBorder.none,
                               ),
                               keyboardType: TextInputType.text,
@@ -119,7 +108,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                             ),
                           ),
                           SizedBox(height: 10.h,),
-                          DottedLine(
+                          const DottedLine(
                             direction: Axis.horizontal,
                             // lineLength: 50,
                             lineThickness: 1.0,
@@ -134,17 +123,17 @@ class _PersonalInformationState extends State<PersonalInformation> {
                             margin: EdgeInsets.only(left: 14.w,right: 14.w,top:10.h),
                             child: TextField(
                               // controller: titleController,
-                              style: const TextStyle(
+                              style: TextStyle(
                                   color: grays_424448,
                                   fontFamily: interSemibold,
-                                  fontSize: 14.0),
-                              decoration: new InputDecoration(
+                                  fontSize: 14.sp),
+                              decoration: InputDecoration(
                                 isDense: true,
                                 hintText: str_enter_your_email,
                                 hintStyle: TextStyle(
                                     color: hint_txt_909196,
                                     fontFamily: interSemibold,
-                                    fontSize: 14.0),
+                                    fontSize: 14.sp),
                                 border: InputBorder.none,
                               ),
                               keyboardType: TextInputType.emailAddress,
@@ -167,18 +156,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                     Container(
                       padding: EdgeInsets.symmetric(vertical: 16.h),
                       margin: EdgeInsets.only(left: 14.w,right: 14.w,top: 16.h),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(14.r),
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            color:shadow_0x0f041d42,
-                            offset: const Offset(3.0, 5.0,),
-                            blurRadius: 3.0,
-                            spreadRadius: 1.0,
-                          ), //BoxShadow
-                        ],
-                      ),
+                      decoration:boxDecoration,
                       child:Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -197,7 +175,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                             ),
                           ),
                           SizedBox(height: 10.h,),
-                          DottedLine(
+                          const DottedLine(
                             direction: Axis.horizontal,
                             // lineLength: 50,
                             lineThickness: 1.0,
@@ -248,18 +226,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                             child: Container(
                               margin: EdgeInsets.only(right: 10.w),
                               padding: EdgeInsets.symmetric(vertical: 16.h),
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(14.r),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color:shadow_0x0f041d42,
-                                    offset: const Offset(3.0, 5.0,),
-                                    blurRadius: 3.0,
-                                    spreadRadius: 1.0,
-                                  ), //BoxShadow
-                                ],
-                              ),
+                              decoration:boxDecoration,
                               child:Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -277,18 +244,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                           Expanded(
                             child: Container(
                               padding: EdgeInsets.symmetric(vertical: 16.h),
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(14.r),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color:shadow_0x0f041d42,
-                                    offset: const Offset(3.0, 5.0,),
-                                    blurRadius: 3.0,
-                                    spreadRadius: 1.0,
-                                  ), //BoxShadow
-                                ],
-                              ),
+                              decoration: boxDecoration,
                               child:Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -307,18 +263,7 @@ class _PersonalInformationState extends State<PersonalInformation> {
                             child: Container(
                               margin: EdgeInsets.only(left: 10.w),
                               padding: EdgeInsets.symmetric(vertical: 16.h),
-                              decoration: BoxDecoration(
-                                  color: Colors.white,
-                                  borderRadius: BorderRadius.circular(14.r),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color:shadow_0x0f041d42,
-                                    offset: const Offset(3.0, 5.0,),
-                                    blurRadius: 3.0,
-                                    spreadRadius: 1.0,
-                                  ), //BoxShadow
-                                ],
-                              ),
+                              decoration:boxDecoration,
                               child:Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,

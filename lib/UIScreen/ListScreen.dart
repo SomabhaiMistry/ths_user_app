@@ -3,17 +3,17 @@ import 'package:flutter_screenutil/src/size_extension.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 import 'package:ths_user_app/Styles/my_height.dart';
-import 'package:ths_user_app/UIScreen/personal_information.dart';
-import 'package:ths_user_app/UIScreen/select_subscription_plan.dart';
-import 'package:ths_user_app/UIScreen/select_time_sloat.dart';
-import 'package:ths_user_app/UIScreen/spalsh_screen_ui.dart';
+import 'package:ths_user_app/UIScreen/personal_information_view.dart';
+import 'package:ths_user_app/UIScreen/select_subscription_plan_view.dart';
+import 'package:ths_user_app/UIScreen/select_time_sloat_view.dart';
+import 'package:ths_user_app/UIScreen/spalsh_screen_view.dart';
 
-import 'about_your_problem.dart';
-import 'all_health_problem.dart';
-import 'consultation_for_joint_pain.dart';
-import 'login_via_mobile.dart';
-import 'otp_verification.dart';
-import 'select_your_city.dart';
+import 'about_your_problem_view.dart';
+import 'all_health_problem_view.dart';
+import 'consultation_for_joint_pain_view.dart';
+import 'login_via_mobile_view.dart';
+import 'otp_verification_view.dart';
+import 'select_your_city_view.dart';
 
 class ListScreen extends StatelessWidget {
   const ListScreen({Key? key}) : super(key: key);
@@ -44,7 +44,7 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SplashScreen(),
+                          builder: (context) => SplashScreenView(),
                         ));
                   },
                   child: Padding(
@@ -64,7 +64,7 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => LoginViaMobile(),
+                          builder: (context) => LoginViaMobileView(),
                         ));
                   },
                   child: Padding(
@@ -82,7 +82,7 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => OtpVerification(),
+                          builder: (context) => OtpVerificationView(),
                         ));
                   },
                   child: Padding(
@@ -101,7 +101,7 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => PersonalInformation(),
+                          builder: (context) => PersonalInformationView(),
                         ));
                   },
                   child: Padding(
@@ -120,7 +120,7 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SelectYourCity(),
+                          builder: (context) => SelectYourCityView(),
                         ));
                   },
                   child: Padding(
@@ -139,7 +139,7 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => AllHealthProblems(),
+                          builder: (context) => AllHealthProblemsView(),
                         ));
                   },
                   child: Padding(
@@ -158,7 +158,7 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => AboutYourProblem(),
+                          builder: (context) => AboutYourProblemView(),
                         ));
                   },
                   child: Padding(
@@ -177,7 +177,7 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => ConsultationForJointPain(),
+                          builder: (context) => ConsultationForJointPainView(),
                         ));
                   },
                   child: Padding(
@@ -195,7 +195,7 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SelectTimeSlot(),
+                          builder: (context) => SelectTimeSlotView(),
                         ));
                   },
                   child: Padding(
@@ -213,7 +213,7 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SelectSubscriptionPlan(),
+                          builder: (context) => SelectSubscriptionPlanView(),
                         ));
                   },
                   child: Padding(
