@@ -20,6 +20,8 @@ class _AboutYourProblemState extends State<AboutYourProblem> {
     return SafeArea(
         child: Scaffold(
           backgroundColor: bg_gray_f0f0f4,
+
+
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
