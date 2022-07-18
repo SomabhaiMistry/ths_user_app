@@ -12,4 +12,9 @@ const grays_424448 = Color(0xFF424448);
 const hint_txt_909196 = Color(0xFF909196);
 const line_gray_e2e2e6 = Color(0xFFe2e2e6);
 const bg_gray_f1eadc = Color(0xFFf1eadc);
+const silver_67696c = Color(0xFF67696c);
+const silver_box_f9fafb = Color(0xFFf9fafb);
+const silver_border_e5e7eb = Color(0xFFe5e7eb);
+const shadow_0x0f041d42 = Color(0x0f041d42);
+const orange_f3a581 = Color(0xFFf3a581);
 

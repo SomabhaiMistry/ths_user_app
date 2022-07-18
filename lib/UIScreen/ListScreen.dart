@@ -4,10 +4,13 @@ import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 import 'package:ths_user_app/Styles/my_height.dart';
 import 'package:ths_user_app/UIScreen/personal_information.dart';
+import 'package:ths_user_app/UIScreen/select_subscription_plan.dart';
+import 'package:ths_user_app/UIScreen/select_time_sloat.dart';
 import 'package:ths_user_app/UIScreen/spalsh_screen_ui.dart';
 
 import 'about_your_problem.dart';
 import 'all_health_problem.dart';
+import 'consultation_for_joint_pain.dart';
 import 'login_via_mobile.dart';
 import 'otp_verification.dart';
 import 'select_your_city.dart';
@@ -162,6 +165,61 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
                     child: Text(
                       "AboutYourProblem Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: sfProDisplayMedium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => ConsultationForJointPain(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
+                    child: Text(
+                      "ConsultationForJointPain Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: sfProDisplayMedium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ), GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SelectTimeSlot(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
+                    child: Text(
+                      "SelectTimeSlot Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: sfProDisplayMedium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ), GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => SelectSubscriptionPlan(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
+                    child: Text(
+                      "SelectSubscriptionPlan Screen",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: sfProDisplayMedium,
