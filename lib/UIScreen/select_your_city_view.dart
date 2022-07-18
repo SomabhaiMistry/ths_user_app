@@ -18,14 +18,14 @@ class SelectYourCityView extends StatefulWidget {
 }
 
 class _SelectYourCityViewState extends State<SelectYourCityView> {
-  int position = 7;
+  int myposition = -1;
   List<SelectCityModel> selectCityList = [
-    SelectCityModel("Surat", id: 1),
-    SelectCityModel("Gandhinagar", id: 2),
-    SelectCityModel("Rajkot", id: 3),
-    SelectCityModel("Bhavnagar", id: 4),
-    SelectCityModel("Jamnagar", id: 5),
-    SelectCityModel("Vadodara", id: 6),
+    SelectCityModel("Surat"),
+    SelectCityModel("Gandhinagar", ),
+    SelectCityModel("Rajkot", ),
+    SelectCityModel("Bhavnagar", ),
+    SelectCityModel("Jamnagar", ),
+    SelectCityModel("Vadodara",),
   ];
 
 
@@ -50,24 +50,23 @@ class _SelectYourCityViewState extends State<SelectYourCityView> {
                 shrinkWrap: true,
                 itemCount: selectCityList.length,
                 itemBuilder: (context, i) => GestureDetector(
-                  onTap: () {
+                  onTap: (){
                     setState(() {
-                      position = selectCityList[i].id;
+                      myposition = i;
                     });
                   },
                   child: Container(
                     margin: EdgeInsets.symmetric(horizontal: 14.w),
                     padding: EdgeInsets.symmetric(vertical: 15.h,horizontal: 12.w),
                     decoration: BoxDecoration(
-                      // border: Border.all(color: position == selectCityList[i].id ? pink_ff5465 : gray_9d9d9d, width: 0.8),
                       borderRadius: BorderRadius.circular(10.r),
-                      color: position == selectCityList[i].id ? bg_btn_199a8e : Colors.transparent,),
+                      color: myposition== i? bg_btn_199a8e : Colors.transparent,),
                     child: Text(
                       selectCityList[i].tvSelectCity,
                       style: TextStyle(
                           fontSize: 16.sp,
                           fontFamily: interMedium,
-                          color: position == selectCityList[i].id ? Colors.white : subtitle_black_101623),
+                          color: myposition== i? Colors.white : subtitle_black_101623),
                     ),
                   ),
                 ),
