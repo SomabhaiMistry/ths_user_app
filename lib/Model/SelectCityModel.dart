@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 
 class SelectCityModel{
   final String tvSelectCity;
-  int id;
-  SelectCityModel(this.tvSelectCity,{required this.id});
+
+  SelectCityModel(this.tvSelectCity);
 }
 
 List<SelectCityModel>modelArrayList = [];
