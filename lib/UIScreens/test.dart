@@ -57,20 +57,15 @@ class _TestState extends State<Test> {
                 MyExpandableWidget(data[index]),
             itemCount: data.length,
           ),
-
-
         ],
       ),
     ));
   }
 }
 
-
 class MyExpandableWidget extends StatelessWidget {
   final League league;
-
   MyExpandableWidget(this.league);
-
   @override
   Widget build(BuildContext context) {
     if (league.listClubs.isEmpty)
@@ -101,19 +96,33 @@ showClubs(Club club) {
     mainAxisAlignment: MainAxisAlignment.start,
     crossAxisAlignment: CrossAxisAlignment.start,
     children: [
+
+      // const DottedLine(
+      //   direction: Axis.horizontal,
+      //   // lineLength: 50,
+      //   lineThickness: 1.0,
+      //   dashLength: 4.0,
+      //   dashColor:line_gray_e2e2e6,
+      //   dashRadius: 0.0,
+      //   dashGapLength: 4.0,
+      //   dashGapColor: Colors.transparent,
+      //   dashGapRadius: 0.0,
+      // ),
       Container(
         margin: EdgeInsets.only(bottom: 5.h),
         padding: EdgeInsets.symmetric(vertical: 6.h,horizontal: 12.w),
         decoration: BoxDecoration(
           color: light_orange_FCEFE6,
           border: Border.all(width: 1,color: orange_df6129),
-          borderRadius: BorderRadius.circular(14.r)
+          borderRadius: BorderRadius.circular(18.r)
         ),
         child: Text(club.tvTime,style: TextStyle(
             fontSize: 14.sp,fontFamily: fontInterMedium,
             color: orange_df6129
         ),),
       ),
+
+
     ],
   );
 }
@@ -125,6 +134,5 @@ class League {
 
 class Club {
   String tvTime;
-
   Club(this.tvTime);
 }

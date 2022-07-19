@@ -29,14 +29,14 @@ class _SelectSubscriptionPlanViewState
         "we will provide you chat and video consultation"),
     SubscriptionPlanModel("Single Consultation", "₹ 559",
         "we will provide you chat and video consultation"),
-    SubscriptionPlanModel("Single Consultation", "₹ 1559",
-        "we will provide you chat and video consultation"),
-    SubscriptionPlanModel("Single Consultation", "₹ 459",
-        "we will provide you chat and video consultation"),
-    SubscriptionPlanModel("Single Consultation", "₹ 559",
-        "we will provide you chat and video consultation"),
-    SubscriptionPlanModel("Single Consultation", "₹ 1559",
-        "we will provide you chat and video consultation"),
+    // SubscriptionPlanModel("Single Consultation", "₹ 1559",
+    //     "we will provide you chat and video consultation"),
+    // SubscriptionPlanModel("Single Consultation", "₹ 459",
+    //     "we will provide you chat and video consultation"),
+    // SubscriptionPlanModel("Single Consultation", "₹ 559",
+    //     "we will provide you chat and video consultation"),
+    // SubscriptionPlanModel("Single Consultation", "₹ 1559",
+    //     "we will provide you chat and video consultation"),
   ];
   bool _selectedFirst = true;
 
