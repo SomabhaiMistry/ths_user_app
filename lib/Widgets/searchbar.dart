@@ -27,14 +27,14 @@ class SearchBar extends StatelessWidget {
               // controller: titleController,
               style: const TextStyle(
                   color: title_black_15181e,
-                  fontFamily: interSemibold,
+                  fontFamily: fontInterSemibold,
                   fontSize: 14.0),
               decoration: new InputDecoration(
                 isDense: true,
                 hintText: title,
                 hintStyle: TextStyle(
                     color: hint_txt_909196,
-                    fontFamily: interSemibold,
+                    fontFamily: fontInterSemibold,
                     fontSize: 14.0),
                 border: InputBorder.none,
               ),

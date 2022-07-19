@@ -34,7 +34,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
                 style: TextStyle(
                     fontSize: 20.sp,
                     color: light_gray_f4f7f5,
-                    fontFamily: poppinsBold),
+                    fontFamily: fontPoppinsBold),
               ),
               SizedBox(
                 height: 5.2.h,
@@ -44,7 +44,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
                 style: TextStyle(
                     fontSize: 14.sp,
                     color: light_gray_f4f7f5,
-                    fontFamily: robotoRegular),
+                    fontFamily: fontRobotoRegular),
               ),
             ],
           ),

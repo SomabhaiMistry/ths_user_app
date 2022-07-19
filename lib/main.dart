@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ths_user_app/UIScreen/ListScreen.dart';
+import 'package:ths_user_app/UIScreens/list_screen.dart';
 
 void main() {
   runApp(const MyApp());

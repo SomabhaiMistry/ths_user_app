@@ -21,7 +21,7 @@ class Button extends StatelessWidget {
               style: TextStyle(
                   color: Colors.white,
                   fontSize: 16.sp,
-                  fontFamily: interSemibold),
+                  fontFamily: fontInterSemibold),
             ),
             onPressed: () {},
             style: ElevatedButton.styleFrom(

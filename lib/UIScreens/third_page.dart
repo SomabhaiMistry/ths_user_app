@@ -6,19 +6,19 @@ import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 import 'package:ths_user_app/Styles/my_icons.dart';
 
-import '../CommonLayout/box_shadow.dart';
-import '../CommonLayout/button.dart';
+import '../Widgets/box_shadow.dart';
+import '../Widgets/button.dart';
 import '../Styles/my_strings.dart';
 
 
-class FirstPage extends StatefulWidget {
-  const FirstPage({Key? key}) : super(key: key);
+class ThirdPage extends StatefulWidget {
+  const ThirdPage({Key? key}) : super(key: key);
 
   @override
-  State<FirstPage> createState() => _FirstPageState();
+  State<ThirdPage> createState() => _ThirdPageState();
 }
 
-class _FirstPageState extends State<FirstPage> {
+class _ThirdPageState extends State<ThirdPage> {
 
   bool isYes = false;
   bool isNo = false;
@@ -39,12 +39,11 @@ class _FirstPageState extends State<FirstPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
 
-                  // Have you had any injuries in the past?
                   Text(
-                      str_have_you_had,
+                      str_any_past_surgeries,
                       style:  TextStyle(
                           color: light_black_3e4046,
-                          fontFamily: interSemibold,
+                          fontFamily: fontInterSemibold,
                           fontStyle:  FontStyle.normal,
                           fontSize: 14.sp
                       ),
@@ -83,7 +82,7 @@ class _FirstPageState extends State<FirstPage> {
                                     str_yes,
                                     style:  TextStyle(
                                         color:isYes?  bg_btn_199a8e:grays_424448,
-                                        fontFamily: interMedium,
+                                        fontFamily: fontInterMedium,
                                         fontStyle:  FontStyle.normal,
                                         fontSize: 14.sp
                                     ),
@@ -128,7 +127,7 @@ class _FirstPageState extends State<FirstPage> {
                                     str_No,
                                     style:  TextStyle(
                                         color:  isNo?  bg_btn_199a8e:grays_424448,
-                                        fontFamily: interMedium,
+                                        fontFamily: fontInterMedium,
                                         fontStyle:  FontStyle.normal,
                                         fontSize: 14.sp
                                     ),

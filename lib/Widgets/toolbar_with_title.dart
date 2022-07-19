@@ -29,7 +29,7 @@ class ToolbarWithTitle extends StatelessWidget {
           Text(title,style: TextStyle(
             fontSize: 14.sp,
             color: title_black_15181e,
-            fontFamily: interSemibold
+            fontFamily: fontInterSemibold
           ),)
 
         ],

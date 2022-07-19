@@ -6,7 +6,7 @@ import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 import 'package:ths_user_app/Styles/my_icons.dart';
 
-import '../CommonLayout/toolbar_with_title.dart';
+import '../Widgets/toolbar_with_title.dart';
 import '../Styles/my_strings.dart';
 
 class AllHealthProblemsView extends StatefulWidget {
@@ -67,7 +67,7 @@ class _AllHealthProblemsViewState extends State<AllHealthProblemsView> {
                         SizedBox(width: 12.w,),
                         Expanded(
                           child: Text(healthProblemList[i].tvDiseaseName,style: TextStyle(
-                              fontFamily: interSemibold,color: title_black_15181e,fontSize: 14.sp
+                              fontFamily: fontInterSemibold,color: title_black_15181e,fontSize: 14.sp
                           ),),
                         ),
                         SvgPicture.asset(icon_forward)
