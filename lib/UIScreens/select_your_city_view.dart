@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:ths_user_app/CommonLayout/button.dart';
-import 'package:ths_user_app/CommonLayout/toolbar_with_title.dart';
+import 'package:ths_user_app/Widgets/button.dart';
+import 'package:ths_user_app/Widgets/toolbar_with_title.dart';
 import 'package:ths_user_app/Model/SelectCityModel.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 
-import '../CommonLayout/searchbar.dart';
+import '../Widgets/searchbar.dart';
 import '../Styles/my_font.dart';
 import '../Styles/my_strings.dart';
 
@@ -65,7 +65,7 @@ class _SelectYourCityViewState extends State<SelectYourCityView> {
                       selectCityList[i].tvSelectCity,
                       style: TextStyle(
                           fontSize: 16.sp,
-                          fontFamily: interMedium,
+                          fontFamily: fontInterMedium,
                           color: myposition== i? Colors.white : subtitle_black_101623),
                     ),
                   ),

@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
-import 'package:ths_user_app/CommonLayout/button.dart';
+import 'package:ths_user_app/Widgets/button.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 
-import '../CommonLayout/toolbar_with_title.dart';
+import '../Widgets/toolbar_with_title.dart';
 import '../Styles/my_strings.dart';
 
 class OtpVerificationView extends StatefulWidget {
@@ -33,7 +33,7 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
                 str_enter_verification_code,
                 style: TextStyle(
                     fontSize: 24.sp,
-                    fontFamily: interBold,
+                    fontFamily: fontInterBold,
                     color: title_black_15181e),
               )),
           Container(
@@ -42,7 +42,7 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
                 str_enter_verification_code_send_your_mobile_no,
                 style: TextStyle(
                     fontSize: 16.sp,
-                    fontFamily: interRegular,
+                    fontFamily: fontInterRegular,
                     color: silver_67696c),
               )),
           Container(
@@ -51,7 +51,7 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
                 str_mobile_number,
                 style: TextStyle(
                     fontSize: 16.sp,
-                    fontFamily: interMedium,
+                    fontFamily: fontInterMedium,
                     color: bg_btn_199a8e),
               )),
           SizedBox(height: 58.h,),
@@ -131,10 +131,10 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
               child: RichText(
                 text: TextSpan(
                     text: str_didn_not_receive_the_code,
-                    style: TextStyle(color:silver_67696c, fontSize: 14.sp,fontFamily: interMedium),
+                    style: TextStyle(color:silver_67696c, fontSize: 14.sp,fontFamily: fontInterMedium),
                     children: <TextSpan>[
                       TextSpan(text:str_resend,
-                        style: TextStyle(color: bg_btn_199a8e, fontSize: 14.sp,fontFamily: interMedium),
+                        style: TextStyle(color: bg_btn_199a8e, fontSize: 14.sp,fontFamily: fontInterMedium),
                       ),
                     ]
                 ),

@@ -6,19 +6,18 @@ import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 import 'package:ths_user_app/Styles/my_icons.dart';
 
-import '../CommonLayout/box_shadow.dart';
-import '../CommonLayout/button.dart';
+import '../Widgets/box_shadow.dart';
+import '../Widgets/button.dart';
 import '../Styles/my_strings.dart';
 
-
-class SecondPage extends StatefulWidget {
-  const SecondPage({Key? key}) : super(key: key);
+class FirstPage extends StatefulWidget {
+  const FirstPage({Key? key}) : super(key: key);
 
   @override
-  State<SecondPage> createState() => _SecondPageState();
+  State<FirstPage> createState() => _FirstPageState();
 }
 
-class _SecondPageState extends State<SecondPage> {
+class _FirstPageState extends State<FirstPage> {
 
   bool isYes = false;
   bool isNo = false;
@@ -39,11 +38,12 @@ class _SecondPageState extends State<SecondPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
 
+                  // Have you had any injuries in the past?
                   Text(
-                      str_have_you_been_medications,
+                      str_have_you_had,
                       style:  TextStyle(
                           color: light_black_3e4046,
-                          fontFamily: interSemibold,
+                          fontFamily: fontInterSemibold,
                           fontStyle:  FontStyle.normal,
                           fontSize: 14.sp
                       ),
@@ -82,7 +82,7 @@ class _SecondPageState extends State<SecondPage> {
                                     str_yes,
                                     style:  TextStyle(
                                         color:isYes?  bg_btn_199a8e:grays_424448,
-                                        fontFamily: interMedium,
+                                        fontFamily: fontInterMedium,
                                         fontStyle:  FontStyle.normal,
                                         fontSize: 14.sp
                                     ),
@@ -127,7 +127,7 @@ class _SecondPageState extends State<SecondPage> {
                                     str_No,
                                     style:  TextStyle(
                                         color:  isNo?  bg_btn_199a8e:grays_424448,
-                                        fontFamily: interMedium,
+                                        fontFamily: fontInterMedium,
                                         fontStyle:  FontStyle.normal,
                                         fontSize: 14.sp
                                     ),

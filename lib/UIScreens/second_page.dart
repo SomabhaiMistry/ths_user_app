@@ -6,19 +6,19 @@ import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 import 'package:ths_user_app/Styles/my_icons.dart';
 
-import '../CommonLayout/box_shadow.dart';
-import '../CommonLayout/button.dart';
+import '../Widgets/box_shadow.dart';
+import '../Widgets/button.dart';
 import '../Styles/my_strings.dart';
 
 
-class ThirdPage extends StatefulWidget {
-  const ThirdPage({Key? key}) : super(key: key);
+class SecondPage extends StatefulWidget {
+  const SecondPage({Key? key}) : super(key: key);
 
   @override
-  State<ThirdPage> createState() => _ThirdPageState();
+  State<SecondPage> createState() => _SecondPageState();
 }
 
-class _ThirdPageState extends State<ThirdPage> {
+class _SecondPageState extends State<SecondPage> {
 
   bool isYes = false;
   bool isNo = false;
@@ -40,10 +40,10 @@ class _ThirdPageState extends State<ThirdPage> {
                 children: [
 
                   Text(
-                      str_any_past_surgeries,
+                      str_have_you_been_medications,
                       style:  TextStyle(
                           color: light_black_3e4046,
-                          fontFamily: interSemibold,
+                          fontFamily: fontInterSemibold,
                           fontStyle:  FontStyle.normal,
                           fontSize: 14.sp
                       ),
@@ -82,7 +82,7 @@ class _ThirdPageState extends State<ThirdPage> {
                                     str_yes,
                                     style:  TextStyle(
                                         color:isYes?  bg_btn_199a8e:grays_424448,
-                                        fontFamily: interMedium,
+                                        fontFamily: fontInterMedium,
                                         fontStyle:  FontStyle.normal,
                                         fontSize: 14.sp
                                     ),
@@ -127,7 +127,7 @@ class _ThirdPageState extends State<ThirdPage> {
                                     str_No,
                                     style:  TextStyle(
                                         color:  isNo?  bg_btn_199a8e:grays_424448,
-                                        fontFamily: interMedium,
+                                        fontFamily: fontInterMedium,
                                         fontStyle:  FontStyle.normal,
                                         fontSize: 14.sp
                                     ),

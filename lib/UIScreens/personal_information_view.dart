@@ -2,12 +2,12 @@ import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ths_user_app/CommonLayout/button.dart';
+import 'package:ths_user_app/Widgets/button.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 
-import '../CommonLayout/box_shadow.dart';
-import '../CommonLayout/green_box_shadow.dart';
-import '../CommonLayout/toolbar_with_title.dart';
+import '../Widgets/box_shadow.dart';
+import '../Widgets/green_box_shadow.dart';
+import '../Widgets/toolbar_with_title.dart';
 import '../Styles/my_colors.dart';
 import '../Styles/my_icons.dart';
 import '../Styles/my_strings.dart';
@@ -46,7 +46,7 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                         margin: EdgeInsets.only(top: 20.h,left: 14.w),
                         child: Text(str_personal_info,style: TextStyle(
                             fontSize: 14.sp,
-                            fontFamily: interSemibold,
+                            fontFamily: fontInterSemibold,
                             color: light_black_3e4046
                         ),),
                       ),
@@ -66,14 +66,14 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                                 // controller: titleController,
                                 style: const TextStyle(
                                     color: grays_424448,
-                                    fontFamily: interSemibold,
+                                    fontFamily: fontInterSemibold,
                                     fontSize: 14.0),
                                 decoration: InputDecoration(
                                   isDense: true,
                                   hintText: str_enter_your_name,
                                   hintStyle: TextStyle(
                                       color: hint_txt_909196,
-                                      fontFamily: interSemibold,
+                                      fontFamily: fontInterSemibold,
                                       fontSize: 14.sp),
                                   border: InputBorder.none,
                                 ),
@@ -99,14 +99,14 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                                 // controller: titleController,
                                 style: TextStyle(
                                     color: grays_424448,
-                                    fontFamily: interSemibold,
+                                    fontFamily: fontInterSemibold,
                                     fontSize: 14.sp),
                                 decoration: InputDecoration(
                                   isDense: true,
                                   hintText: str_enter_your_surname,
                                   hintStyle: TextStyle(
                                       color: hint_txt_909196,
-                                      fontFamily: interSemibold,
+                                      fontFamily: fontInterSemibold,
                                       fontSize: 14.sp),
                                   border: InputBorder.none,
                                 ),
@@ -132,14 +132,14 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                                 // controller: titleController,
                                 style: TextStyle(
                                     color: grays_424448,
-                                    fontFamily: interSemibold,
+                                    fontFamily: fontInterSemibold,
                                     fontSize: 14.sp),
                                 decoration: InputDecoration(
                                   isDense: true,
                                   hintText: str_enter_your_email,
                                   hintStyle: TextStyle(
                                       color: hint_txt_909196,
-                                      fontFamily: interSemibold,
+                                      fontFamily: fontInterSemibold,
                                       fontSize: 14.sp),
                                   border: InputBorder.none,
                                 ),
@@ -155,7 +155,7 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                         margin: EdgeInsets.only(top: 20.h,left: 14.w),
                         child: Text(str_dob,style: TextStyle(
                             fontSize: 14.sp,
-                            fontFamily: interSemibold,
+                            fontFamily: fontInterSemibold,
                             color: light_black_3e4046
                         ),),
                       ),
@@ -175,7 +175,7 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Text(str_date_dob,style: TextStyle(
-                                      fontFamily: interSemibold,fontSize: 14.sp,color: grays_424448
+                                      fontFamily: fontInterSemibold,fontSize: 14.sp,color: grays_424448
                                   ),),
                                   Image.asset(icon_dob,width: 16.5.w,height: 16.5.h,)
                                 ],
@@ -200,11 +200,11 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(str_age,style: TextStyle(
-                                      fontSize: 14.sp,color: hint_txt_909196,fontFamily: interSemibold
+                                      fontSize: 14.sp,color: hint_txt_909196,fontFamily: fontInterSemibold
                                   ),),
                                   SizedBox(width: 5.w,),
                                   Text(str_twenty_nine,style: TextStyle(
-                                      fontSize: 14.sp,color: grays_424448,fontFamily: interSemibold
+                                      fontSize: 14.sp,color: grays_424448,fontFamily: fontInterSemibold
                                   ),),
                                 ],
                               ),
@@ -217,7 +217,7 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                         margin: EdgeInsets.only(top: 20.h,left: 14.w),
                         child: Text(str_gender,style: TextStyle(
                             fontSize: 14.sp,
-                            fontFamily: interSemibold,
+                            fontFamily: fontInterSemibold,
                             color: light_black_3e4046
                         ),),
                       ),
@@ -249,7 +249,7 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                                       Image.asset(img_other,height: 36.h,width: 36.w,color: isMale?Colors.white:hint_txt_909196,),
                                       SizedBox(height: 14.h,),
                                       Text(str_male,style: TextStyle(
-                                          fontFamily: interSemibold,color: isMale?Colors.white:hint_txt_909196,fontSize: 14.sp
+                                          fontFamily: fontInterSemibold,color: isMale?Colors.white:hint_txt_909196,fontSize: 14.sp
                                       ),)
 
                                     ],
@@ -276,7 +276,7 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                                       Image.asset(img_female,height: 36.h,width: 36.w,color: isFemale?Colors.white:hint_txt_909196,),
                                       SizedBox(height: 14.h,),
                                       Text(str_female,style: TextStyle(
-                                          fontFamily: interSemibold,color: isFemale?Colors.white:hint_txt_909196,fontSize: 14.sp
+                                          fontFamily: fontInterSemibold,color: isFemale?Colors.white:hint_txt_909196,fontSize: 14.sp
                                       ),)
 
                                     ],
@@ -304,7 +304,7 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                                       Image.asset(img_other,height: 36.h,width: 36.w,color: isOther?Colors.white:hint_txt_909196,),
                                       SizedBox(height: 14.h,),
                                       Text(str_other,style: TextStyle(
-                                          fontFamily: interSemibold,color: isOther?Colors.white:hint_txt_909196,fontSize: 14.sp
+                                          fontFamily: fontInterSemibold,color: isOther?Colors.white:hint_txt_909196,fontSize: 14.sp
                                       ),)
 
                                     ],

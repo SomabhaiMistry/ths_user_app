@@ -6,8 +6,8 @@ import 'package:ths_user_app/Model/ConsultationModel.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 
-import '../CommonLayout/box_shadow.dart';
-import '../CommonLayout/toolbar_with_title.dart';
+import '../Widgets/box_shadow.dart';
+import '../Widgets/toolbar_with_title.dart';
 import '../Styles/my_icons.dart';
 import '../Styles/my_strings.dart';
 class ConsultationForJointPainView extends StatefulWidget {
@@ -44,7 +44,7 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
             padding: EdgeInsets.symmetric(vertical: 10.h),
             color: orange_f3a581,
             child: Text(str_here_are_some_of_the_best_doctors_for_you,style: TextStyle(
-              fontFamily: interMedium,fontSize: 14.sp,color: Colors.white
+              fontFamily: fontInterMedium,fontSize: 14.sp,color: Colors.white
             ),textAlign: TextAlign.center,),
           ),
 
@@ -85,11 +85,11 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(consultationList[i].tvDoctorName,style: TextStyle(
-                                      fontSize: 17.sp,color: Colors.black,fontFamily: circularXXTTTrialMedium
+                                      fontSize: 17.sp,color: Colors.black,fontFamily: fontCircularXXTTTrialMedium
                                   ),),
                                   SizedBox(height: 4.h,),
                                   Text(consultationList[i].tvSpecialist,style: TextStyle(
-                                      fontSize: 12.sp,color: silver_67696c,fontFamily: circularXXTTTrialRegular
+                                      fontSize: 12.sp,color: silver_67696c,fontFamily: fontCircularXXTTTrialRegular
                                   ),),
                                   SizedBox(height: 12.h,),
                                   Text(str_exp+consultationList[i].tvExperience,style: TextStyle(
@@ -101,7 +101,7 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Text(consultationList[i].tvConsultations+str_consultations,style: TextStyle(
-                                          fontSize: 12.sp,color: silver_67696c,fontFamily: circularXXTTTrialRegular
+                                          fontSize: 12.sp,color: silver_67696c,fontFamily: fontCircularXXTTTrialRegular
                                       ),),
                                       SizedBox(width: 4.w,),
                                       Image.asset(img_like,width: 20.w,height: 18.h,)
@@ -127,7 +127,7 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
                               child: Container(
                                 padding: EdgeInsets.symmetric(vertical: 16.h),
                                 child: Text(str_next_available+consultationList[i].tvNextTime,style: TextStyle(
-                                    fontFamily: interSemibold,color: bg_btn_199a8e,fontSize: 13.sp
+                                    fontFamily: fontInterSemibold,color: bg_btn_199a8e,fontSize: 13.sp
                                 ),
                                   textAlign: TextAlign.center,),
                               ),
@@ -145,7 +145,7 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
                                 ),
                                 padding: EdgeInsets.symmetric(vertical: 16.h,horizontal: 15.w),
                                 child: Text(str_consult_now,style: TextStyle(
-                                    fontFamily: interBold,color: Colors.white,fontSize: 13.sp
+                                    fontFamily: fontInterBold,color: Colors.white,fontSize: 13.sp
                                 ),
                                   textAlign: TextAlign.center,),
                               ),
@@ -212,11 +212,11 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(str_dr_name,style: TextStyle(
-                                    fontSize: 17.sp,color: Colors.black,fontFamily: circularXXTTTrialMedium
+                                    fontSize: 17.sp,color: Colors.black,fontFamily: fontCircularXXTTTrialMedium
                                 ),),
                                 SizedBox(height: 4.h,),
                                 Text(str_Orthopedist,style: TextStyle(
-                                    fontSize: 12.sp,color: silver_67696c,fontFamily: circularXXTTTrialRegular
+                                    fontSize: 12.sp,color: silver_67696c,fontFamily: fontCircularXXTTTrialRegular
                                 ),),
                                 SizedBox(height: 12.h,),
                                 Text(str_exp_12_years,style: TextStyle(
@@ -228,7 +228,7 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(str_455_consultations,style: TextStyle(
-                                        fontSize: 12.sp,color: silver_67696c,fontFamily: circularXXTTTrialRegular
+                                        fontSize: 12.sp,color: silver_67696c,fontFamily: fontCircularXXTTTrialRegular
                                     ),),
                                     SizedBox(width: 4.w,),
                                     Image.asset(img_like,width: 20.w,height: 18.h,)
@@ -247,10 +247,10 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
                       ),
                       Container(
                           margin: EdgeInsets.only(top: 17.h,left: 14.w),
-                          child: Text(str_qualification_title,style: TextStyle(fontSize: 14.sp,fontFamily: interSemibold,color: title_black_15181e),)),
+                          child: Text(str_qualification_title,style: TextStyle(fontSize: 14.sp,fontFamily: fontInterSemibold,color: title_black_15181e),)),
                       Container(
                           margin: EdgeInsets.only(top: 4.h,left: 14.w),
-                          child: Text(str_qualification,style: TextStyle(fontSize: 12.sp,fontFamily: interRegular,color: grays_424448),)),
+                          child: Text(str_qualification,style: TextStyle(fontSize: 12.sp,fontFamily: fontInterRegular,color: grays_424448),)),
                       Container(
                         margin: EdgeInsets.only(left: 14.w,right: 14.w,bottom: 25.h,top: 35.h),
                         child: SizedBox(
@@ -266,7 +266,7 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 13.sp,
-                                          fontFamily: interMedium),
+                                          fontFamily: fontInterMedium),
                                     textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -281,7 +281,7 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
                                       style: TextStyle(
                                           color: Colors.white,
                                           fontSize: 13.sp,
-                                          fontFamily: interBold),
+                                          fontFamily: fontInterBold),
                                     ),
                                   ),
                                 ],
