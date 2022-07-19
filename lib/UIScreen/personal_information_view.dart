@@ -284,22 +284,6 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                             ),
                           ),
                           Expanded(
-
-                            child: Container(
-                              margin: EdgeInsets.only(left: 10.w),
-                              padding: EdgeInsets.symmetric(vertical: 16.h),
-                              decoration:boxDecoration,
-                              child:Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Image.asset(img_other,height: 36.h,width: 36.w,),
-                                  SizedBox(height: 14.h,),
-                                  Text(str_other,style: TextStyle(
-                                      fontFamily: interSemibold,color: hint_txt_909196,fontSize: 14.sp
-                                  ),)
-                                ],
-
                             child: GestureDetector(
                               onTap: (){
                                 setState(() {
@@ -324,7 +308,6 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
 
                                   ],
                                 ),
-
                               ),
                             ),
                           ),
@@ -334,9 +317,7 @@ class _PersonalInformationViewState extends State<PersonalInformationView> {
                   ],
                 ),
               ),
-              Container(
-                  margin: EdgeInsets.only(bottom: 24.h),
-                  child: Button(str_next)),
+              Button(str_next)
             ],
           ),
         ));

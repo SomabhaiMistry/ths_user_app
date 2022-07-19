@@ -9,7 +9,6 @@ import 'package:ths_user_app/UIScreen/select_time_sloat_view.dart';
 import 'package:ths_user_app/UIScreen/spalsh_screen_view.dart';
 
 import 'AboutYourProblemView.dart';
-import 'about_your_problem_view.dart';
 import 'all_health_problem_view.dart';
 import 'consultation_for_joint_pain_view.dart';
 import 'login_via_mobile_view.dart';

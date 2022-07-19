@@ -17,3 +17,5 @@ const icon_search = 'assets/images/icon_search.svg';
 const icon_forward = 'assets/images/icon_forward.svg';
 const icon_other = 'assets/images/icon_other.svg';
 const icon_thumb = 'assets/images/icon_thumb.svg';
+const icon_circle_grey = 'assets/images/icon_circle_grey.svg';
+const icon_circle_green = 'assets/images/icon_circle_green.svg';
