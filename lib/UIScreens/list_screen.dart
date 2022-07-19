@@ -6,6 +6,7 @@ import 'package:ths_user_app/UIScreens/personal_information_view.dart';
 import 'package:ths_user_app/UIScreens/select_subscription_plan_view.dart';
 import 'package:ths_user_app/UIScreens/select_time_sloat_view.dart';
 import 'package:ths_user_app/UIScreens/spalsh_screen_view.dart';
+import 'package:ths_user_app/UIScreens/test.dart';
 
 import 'about_your_problem_view.dart';
 import 'all_health_problem_view.dart';
@@ -240,6 +241,25 @@ class ListScreen extends StatelessWidget {
                     padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
                     child: Text(
                       "AboutYourProblemView Screen",
+                      style: TextStyle(
+                          color: Colors.black87,
+                          fontFamily: fontInterMedium,
+                          fontSize: 16.sp),
+                    ),
+                  ),
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Test(),
+                        ));
+                  },
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
+                    child: Text(
+                      "Test Screen",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: fontInterMedium,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
@@ -33,6 +34,13 @@ class _LoginViaMobileViewState extends State<LoginViaMobileView> {
 
   @override
   Widget build(BuildContext context) {
+    // SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    //   systemNavigationBarColor: Colors.white, // navigation bar color
+    //   statusBarColor: bg_btn_199a8e, // status bar color
+    //   statusBarIconBrightness: Brightness.dark, // status bar icons' color
+    //   systemNavigationBarIconBrightness:
+    //   Brightness.light, //navigation bar icons' color
+    // ));
     return SafeArea(
         child: Scaffold(
           backgroundColor: bg_btn_199a8e,

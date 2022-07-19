@@ -26,6 +26,12 @@ class _SelectYourCityViewState extends State<SelectYourCityView> {
     SelectCityModel("Bhavnagar", ),
     SelectCityModel("Jamnagar", ),
     SelectCityModel("Vadodara",),
+    SelectCityModel("Surat"),
+    SelectCityModel("Gandhinagar", ),
+    SelectCityModel("Rajkot", ),
+    SelectCityModel("Bhavnagar", ),
+    SelectCityModel("Jamnagar", ),
+    SelectCityModel("Vadodara",),
   ];
 
 
