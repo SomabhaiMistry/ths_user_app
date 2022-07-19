@@ -67,3 +67,4 @@ var str_terms_conditions = "Terms & Conditions";
 var str_proceed_to_pay = "Proceed to Pay";
 var str_i_agree_with = "I agree with";
 var str_book_an_online = "Book an online appointment with the best doctors with in 60 secs.";
+var str_use_wallet_amount = "Use wallet Amount";

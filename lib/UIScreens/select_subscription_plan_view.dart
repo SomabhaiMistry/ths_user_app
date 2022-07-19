@@ -31,7 +31,14 @@ class _SelectSubscriptionPlanViewState
         "we will provide you chat and video consultation"),
     SubscriptionPlanModel("Single Consultation", "₹ 1559",
         "we will provide you chat and video consultation"),
+    SubscriptionPlanModel("Single Consultation", "₹ 459",
+        "we will provide you chat and video consultation"),
+    SubscriptionPlanModel("Single Consultation", "₹ 559",
+        "we will provide you chat and video consultation"),
+    SubscriptionPlanModel("Single Consultation", "₹ 1559",
+        "we will provide you chat and video consultation"),
   ];
+  bool _selectedFirst = true;
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +55,6 @@ class _SelectSubscriptionPlanViewState
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // SizedBox(height: 15.h),
                 ListView.builder(
                   scrollDirection: Axis.vertical,
                   primary: false,
@@ -256,31 +262,76 @@ class _SelectSubscriptionPlanViewState
                   margin: EdgeInsets.only(top: 16.h, left: 14.w, right: 14.w),
                   decoration: boxDecoration,
                   child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Text(
-                        str_apply_coupon,
-                        style: TextStyle(
-                            fontSize: 14.sp,
-                            fontFamily: fontInterSemibold,
-                            color: grays_424448),
+                      InkWell(
+                        onTap: () {
+                          setState(() {
+                            _selectedFirst = !_selectedFirst;
+                            print("click thay che");
+                          });
+                        },
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 20.h,
+                              width: 20.w,
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.all(Radius.circular(3.r)),
+                                  border: Border.all(
+                                      color: _selectedFirst ?   line_gray_e2e2e6 : orange_df6129,
+                                      width: 1
+                                  ),
+                                  color: _selectedFirst ?Colors.white : light_orange_FCEFE6
+                              ),
+                              child: _selectedFirst ? Icon(
+                                Icons.check,
+                                size: 18.sp,
+                                color: Colors.white ,
+                              ) : Icon(
+                                Icons.check,
+                                size: 18.sp,
+                                color:orange_df6129,
+                              ),
+                            ),
+
+                            SizedBox(width: 11.w,),
+
+                            Text(str_use_wallet_amount,style: TextStyle(
+                              fontSize: 14.sp,
+                              fontFamily: fontInterSemibold,
+                              color:_selectedFirst ?   grays_424448 : orange_df6129,
+                            ),)
+                          ],
+                        ),
                       ),
 
-                      Text(
-                        str_alv_bal,
-                        style: TextStyle(
-                            fontSize: 14.sp,
-                            fontFamily: fontInterMedium,
-                            color: hint_txt_909196),
-                      ),
-                      Text(
-                        str_499,
-                        style: TextStyle(
-                            fontSize: 14.sp,
-                            fontFamily: fontInterMedium,
-                            color: grays_424448),
-                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+
+                          Text(
+                            str_alv_bal,
+                            style: TextStyle(
+                                fontSize: 14.sp,
+                                fontFamily: fontInterMedium,
+                                color: hint_txt_909196),
+                          ),
+                          SizedBox(width:2.5.w,),
+                          Text(
+                            str_499,
+                            style: TextStyle(
+                                fontSize: 14.sp,
+                                fontFamily: fontInterMedium,
+                                color: grays_424448),
+                          ),
+
+                        ],
+                      )
+
                     ],
                   ),
                 ),
@@ -288,7 +339,6 @@ class _SelectSubscriptionPlanViewState
               ],
             ),
           )
-
         ],
       ),
     ));
