@@ -63,7 +63,7 @@ class _AllHealthProblemsViewState extends State<AllHealthProblemsView> {
                       children: [
                         ClipOval(child: Container(
                             color: Colors.yellow,
-                            child: Image.asset(healthProblemList[i].imgDisease,width: 60.w,height: 60.h,))),
+                            child: Image.asset(healthProblemList[i].imgDisease,width: 59.w,height: 59.h,))),
                         SizedBox(width: 12.w,),
                         Expanded(
                           child: Text(healthProblemList[i].tvDiseaseName,style: TextStyle(

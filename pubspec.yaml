@@ -78,30 +78,27 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: sfpro_display_medium
+    - family: poppin bold
       fonts:
-        - asset: fonts/sf_pro_displaymedium.ttf
-    - family: poppins_bold
+        - asset: fonts/poppins-bold.ttf
+    - family: roboto regular
       fonts:
-        - asset: fonts/poppins_bold.otf
-    - family: roboto_regular
+        - asset: fonts/roboto-regular.ttf
+    - family: inter semibold
       fonts:
-        - asset: fonts/roboto_regular.ttf
-    - family: inter_semibold
+        - asset: fonts/inter-semibold.ttf
+    - family: inter medium
       fonts:
-        - asset: fonts/inter_semibold.ttf
-    - family: inter_medium
+        - asset: fonts/inter-medium.ttf
+    - family: inter bold
       fonts:
-        - asset: fonts/inter_medium.ttf
-    - family: inter_bold
+        - asset: fonts/inter-bold.ttf
+    - family: inter regular
       fonts:
-        - asset: fonts/inter_bold.ttf
-    - family: inter_regular
+        - asset: fonts/inter-regular.ttf
+    - family: circularXXTTTrial medium
       fonts:
-        - asset: fonts/inter_regular.ttf
-    - family: circularXXTTTrial_medium
+        - asset: fonts/circularXXTTTrial-medium.ttf
+    - family: circularXXTTTrial regular
       fonts:
-        - asset: fonts/circularXXTTTrial_medium.ttf
-    - family: circularXXTTTrial_regular
-      fonts:
-        - asset: fonts/circularXXTTTrial_regular.ttf
+        - asset: fonts/circularXXTTTrial-regular.ttf

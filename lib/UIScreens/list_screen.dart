@@ -33,7 +33,7 @@ class ListScreen extends StatelessWidget {
                   child: Text("List of Screen",style: TextStyle(
                     color: Colors.black,
                     fontSize: 15.sp,
-                    fontFamily: fontSfproDisplayMedium
+                    fontFamily: fontInterMedium
                   ),),
                 ),
 
@@ -52,7 +52,7 @@ class ListScreen extends StatelessWidget {
                       "SplashScreen Screen",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontFamily: fontSfproDisplayMedium,
+                          fontFamily: fontInterMedium,
                           fontSize: 16.sp),
                     ),
                   ),
@@ -72,7 +72,7 @@ class ListScreen extends StatelessWidget {
                       "LoginViaMobile Screen",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontFamily: fontSfproDisplayMedium,
+                          fontFamily: fontInterMedium,
                           fontSize: 16.sp),
                     ),
                   ),
@@ -90,7 +90,7 @@ class ListScreen extends StatelessWidget {
                       "OtpVerification Screen",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontFamily: fontSfproDisplayMedium,
+                          fontFamily: fontInterMedium,
                           fontSize: 16.sp),
                     ),
                   ),
@@ -109,7 +109,7 @@ class ListScreen extends StatelessWidget {
                       "PersonalInformation Screen",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontFamily: fontSfproDisplayMedium,
+                          fontFamily: fontInterMedium,
                           fontSize: 16.sp),
                     ),
                   ),
@@ -128,7 +128,7 @@ class ListScreen extends StatelessWidget {
                       "SelectYourCity Screen",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontFamily: fontSfproDisplayMedium,
+                          fontFamily: fontInterMedium,
                           fontSize: 16.sp),
                     ),
                   ),
@@ -147,7 +147,7 @@ class ListScreen extends StatelessWidget {
                       "AllHealthProblems Screen",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontFamily: fontSfproDisplayMedium,
+                          fontFamily: fontInterMedium,
                           fontSize: 16.sp),
                     ),
                   ),
@@ -185,7 +185,7 @@ class ListScreen extends StatelessWidget {
                       "ConsultationForJointPain Screen",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontFamily: fontSfproDisplayMedium,
+                          fontFamily: fontInterMedium,
                           fontSize: 16.sp),
                     ),
                   ),
@@ -204,7 +204,7 @@ class ListScreen extends StatelessWidget {
                       "SelectTimeSlot Screen",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontFamily: fontSfproDisplayMedium,
+                          fontFamily: fontInterMedium,
                           fontSize: 16.sp),
                     ),
                   ),
@@ -223,7 +223,7 @@ class ListScreen extends StatelessWidget {
                       "SelectSubscriptionPlan Screen",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontFamily: fontSfproDisplayMedium,
+                          fontFamily: fontInterMedium,
                           fontSize: 16.sp),
                     ),
                   ),
@@ -242,7 +242,7 @@ class ListScreen extends StatelessWidget {
                       "AboutYourProblemView Screen",
                       style: TextStyle(
                           color: Colors.black87,
-                          fontFamily: fontSfproDisplayMedium,
+                          fontFamily: fontInterMedium,
                           fontSize: 16.sp),
                     ),
                   ),
