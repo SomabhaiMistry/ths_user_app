@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:ths_user_app/UIScreen/SecondPage.dart';
+import 'package:ths_user_app/UIScreen/ThirdPage.dart';
 
 import '../Styles/my_colors.dart';
 import '../Styles/my_font.dart';
@@ -17,9 +19,10 @@ class AboutYourProblemView extends StatefulWidget {
 class _AboutYourProblemViewState extends State<AboutYourProblemView> {
   PageController controller = PageController();
   List<Widget> _list = <Widget>[
+
     new Center(child: new FirstPage()),
-    new Center(child: new FirstPage()),
-    new Center(child: new FirstPage()),
+    new Center(child: new SecondPage()),
+    new Center(child: new ThirdPage()),
   ];
   int _curr = 0;
 

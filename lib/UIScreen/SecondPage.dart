@@ -11,14 +11,14 @@ import '../CommonLayout/button.dart';
 import '../Styles/my_strings.dart';
 
 
-class FirstPage extends StatefulWidget {
-  const FirstPage({Key? key}) : super(key: key);
+class SecondPage extends StatefulWidget {
+  const SecondPage({Key? key}) : super(key: key);
 
   @override
-  State<FirstPage> createState() => _FirstPageState();
+  State<SecondPage> createState() => _SecondPageState();
 }
 
-class _FirstPageState extends State<FirstPage> {
+class _SecondPageState extends State<SecondPage> {
 
   bool isYes = false;
   bool isNo = false;
@@ -39,9 +39,8 @@ class _FirstPageState extends State<FirstPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
 
-                  // Have you had any injuries in the past?
                   Text(
-                      str_have_you_had,
+                      str_have_you_been_medications,
                       style:  TextStyle(
                           color: light_black_3e4046,
                           fontFamily: interSemibold,
