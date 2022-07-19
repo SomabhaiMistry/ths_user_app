@@ -21,22 +21,21 @@ class SelectSubscriptionPlanView extends StatefulWidget {
       _SelectSubscriptionPlanViewState();
 }
 
-class _SelectSubscriptionPlanViewState
-    extends State<SelectSubscriptionPlanView> {
+class _SelectSubscriptionPlanViewState extends State<SelectSubscriptionPlanView> {
   int myposition = -1;
   List<SubscriptionPlanModel> selectPlanList = [
     SubscriptionPlanModel("Single Consultation", "₹ 459",
         "we will provide you chat and video consultation"),
     SubscriptionPlanModel("Single Consultation", "₹ 559",
         "we will provide you chat and video consultation"),
-    // SubscriptionPlanModel("Single Consultation", "₹ 1559",
-    //     "we will provide you chat and video consultation"),
-    // SubscriptionPlanModel("Single Consultation", "₹ 459",
-    //     "we will provide you chat and video consultation"),
-    // SubscriptionPlanModel("Single Consultation", "₹ 559",
-    //     "we will provide you chat and video consultation"),
-    // SubscriptionPlanModel("Single Consultation", "₹ 1559",
-    //     "we will provide you chat and video consultation"),
+    SubscriptionPlanModel("Single Consultation", "₹ 1559",
+        "we will provide you chat and video consultation"),
+    SubscriptionPlanModel("Single Consultation", "₹ 459",
+        "we will provide you chat and video consultation"),
+    SubscriptionPlanModel("Single Consultation", "₹ 559",
+        "we will provide you chat and video consultation"),
+    SubscriptionPlanModel("Single Consultation", "₹ 1559",
+        "we will provide you chat and video consultation"),
   ];
   bool _selectedFirst = true;
 
@@ -86,7 +85,7 @@ class _SelectSubscriptionPlanViewState
                           width: 1,
                           color: myposition == i ? orange_df6129 : Colors.white,
                         ),
-                        borderRadius: BorderRadius.circular(10.r),
+                        borderRadius: BorderRadius.circular(14.r),
                         color: myposition == i ? light_orange_FCEFE6 : Colors.white,
                       ),
                       child: Column(
@@ -242,14 +241,14 @@ class _SelectSubscriptionPlanViewState
                             str_tax,
                             style: TextStyle(
                                 fontSize: 14.sp,
-                                fontFamily: fontInterMedium,
+                                fontFamily: fontInterBold,
                                 color: grays_424448),
                           ),
                           Text(
                             str_fourty_five_nine,
                             style: TextStyle(
                                 fontSize: 14.sp,
-                                fontFamily: fontInterMedium,
+                                fontFamily: fontInterBold,
                                 color: grays_424448),
                           ),
                         ],
@@ -335,7 +334,7 @@ class _SelectSubscriptionPlanViewState
                     ],
                   ),
                 ),
-                Container(margin: EdgeInsets.only(top: 24.h), child: Button(str_pay))
+                Container(margin: EdgeInsets.only(top: 24.h,bottom: 24.h), child: Button(str_pay))
               ],
             ),
           )
