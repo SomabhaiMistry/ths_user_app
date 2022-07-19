@@ -9,7 +9,7 @@ import 'package:ths_user_app/Styles/my_font.dart';
 
 import '../Widgets/box_shadow.dart';
 import '../Widgets/toolbar_with_title.dart';
-import '../Model/SubscriptionPlanModel.dart';
+import '../Model/subscription_plan_model.dart';
 import '../Styles/my_icons.dart';
 import '../Styles/my_strings.dart';
 

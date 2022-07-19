@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ths_user_app/Widgets/button.dart';
 import 'package:ths_user_app/Widgets/toolbar_with_title.dart';
-import 'package:ths_user_app/Model/SelectCityModel.dart';
+import 'package:ths_user_app/Model/select_city_model.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 
 import '../Widgets/searchbar.dart';

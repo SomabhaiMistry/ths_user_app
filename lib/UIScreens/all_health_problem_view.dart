@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ths_user_app/Model/HealthProblemModel.dart';
+import 'package:ths_user_app/Model/healthProblem_model.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 import 'package:ths_user_app/Styles/my_icons.dart';
@@ -63,7 +63,7 @@ class _AllHealthProblemsViewState extends State<AllHealthProblemsView> {
                       children: [
                         ClipOval(child: Container(
                             color: Colors.yellow,
-                            child: Image.asset(healthProblemList[i].imgDisease,width: 60.w,height: 60.h,))),
+                            child: Image.asset(healthProblemList[i].imgDisease,width: 59.w,height: 59.h,))),
                         SizedBox(width: 12.w,),
                         Expanded(
                           child: Text(healthProblemList[i].tvDiseaseName,style: TextStyle(
