@@ -59,7 +59,6 @@ class _SelectSubscriptionPlanViewState
                 margin: EdgeInsets.only(left: 14.w, right: 14.w, bottom: 7.h),
                 padding: EdgeInsets.symmetric(vertical: 15.h, horizontal: 12.w),
                 decoration: BoxDecoration(
-
                   boxShadow: [
                     BoxShadow(
                       color: shadow_0x0f041d42,

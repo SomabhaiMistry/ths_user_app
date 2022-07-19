@@ -57,70 +57,68 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
           SizedBox(height: 58.h,),
           Expanded(
             child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 78.w),
               alignment: Alignment.topCenter,
-              child: SizedBox(
-                width: 220.w,
-                child: Theme(
-                  data: ThemeData(
-                    primaryColor: Colors.black,
-                    primaryColorDark: Colors.black,
-                    focusColor: Colors.black,
-                    textSelectionTheme: const TextSelectionThemeData(
-                      cursorColor: Colors.black, //thereby
-                    ),
+              child: Theme(
+                data: ThemeData(
+                  primaryColor: Colors.black,
+                  primaryColorDark: Colors.black,
+                  focusColor: Colors.black,
+                  textSelectionTheme: const TextSelectionThemeData(
+                    cursorColor: Colors.black, //thereby
                   ),
-                  child: PinCodeTextField(
-                    appContext: context,
-                    pastedTextStyle: const TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                    length: 4,
-                    obscureText: false,
-                    obscuringCharacter: '*',
-                    obscuringWidget: null,
-                    blinkWhenObscuring: true,
-                    animationType: AnimationType.fade,
-                    enablePinAutofill: true,
-                    pinTheme: PinTheme(
-                        shape: PinCodeFieldShape.box,
-                        borderRadius: BorderRadius.circular(12.r),
-                        fieldHeight: 53,
-                        fieldWidth: 53,
-                        borderWidth: 1,
-                        activeFillColor: bg_gray_f1eadc,
-                        inactiveColor: silver_border_e5e7eb,
-                        inactiveFillColor: silver_box_f9fafb,
-                        errorBorderColor: smoke_f5f5f5,
-                        activeColor: smoke_f5f5f5,
-                        selectedColor: silver_border_e5e7eb,
-                        selectedFillColor:silver_border_e5e7eb),
-                    cursorColor: Colors.black,
-                    animationDuration: const Duration(milliseconds: 300),
-                    enableActiveFill: true,
-                    keyboardType: TextInputType.number,
-                    boxShadows: [
-                      BoxShadow(
-                        offset: Offset(0, 1),
-                        color: Colors.transparent,
-                        blurRadius: 2.r,
-                      )
-                    ],
-                    onCompleted: (v) {
-                      print("Completed");
-                    },
-                    onChanged: (value) {
-                      print(value);
-                    },
-                    beforeTextPaste: (text) {
-                      print("Allowing to paste $text");
-                      //if you return true then it will show the paste confirmation dialog. Otherwise if false, then nothing will happen.
-                      //but you can show anything you want here, like your pop up saying wrong paste format or etc
-                      return true;
-                    },
-                  ),
-
                 ),
+                child: PinCodeTextField(
+                  appContext: context,
+                  pastedTextStyle: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                  ),
+                  length: 4,
+                  obscureText: false,
+                  obscuringCharacter: '*',
+                  obscuringWidget: null,
+                  blinkWhenObscuring: true,
+                  animationType: AnimationType.fade,
+                  enablePinAutofill: true,
+                  pinTheme: PinTheme(
+                      shape: PinCodeFieldShape.box,
+                      borderRadius: BorderRadius.circular(12.r),
+                      fieldHeight: 53,
+                      fieldWidth: 53,
+                      borderWidth: 1,
+                      activeFillColor: bg_gray_f1eadc,
+                      inactiveColor: silver_border_e5e7eb,
+                      inactiveFillColor: silver_box_f9fafb,
+                      errorBorderColor: smoke_f5f5f5,
+                      activeColor: smoke_f5f5f5,
+                      selectedColor: silver_border_e5e7eb,
+                      selectedFillColor:silver_border_e5e7eb),
+                  cursorColor: Colors.black,
+                  animationDuration: const Duration(milliseconds: 300),
+                  enableActiveFill: true,
+                  keyboardType: TextInputType.number,
+                  boxShadows: [
+                    BoxShadow(
+                      offset: Offset(0, 1),
+                      color: Colors.transparent,
+                      blurRadius: 2.r,
+                    )
+                  ],
+                  onCompleted: (v) {
+                    print("Completed");
+                  },
+                  onChanged: (value) {
+                    print(value);
+                  },
+                  beforeTextPaste: (text) {
+                    print("Allowing to paste $text");
+                    //if you return true then it will show the paste confirmation dialog. Otherwise if false, then nothing will happen.
+                    //but you can show anything you want here, like your pop up saying wrong paste format or etc
+                    return true;
+                  },
+                ),
+
               ),
             ),
           ),

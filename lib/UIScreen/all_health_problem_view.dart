@@ -27,6 +27,10 @@ class _AllHealthProblemsViewState extends State<AllHealthProblemsView> {
     HealthProblemModel(icon_logo,"General physicain"),
     HealthProblemModel(icon_logo,"Heart"),
     HealthProblemModel(icon_logo,"Eye Specialist"),
+    HealthProblemModel(icon_logo,"Women’s Health"),
+    HealthProblemModel(icon_logo,"General physicain"),
+    HealthProblemModel(icon_logo,"Heart"),
+    HealthProblemModel(icon_logo,"Eye Specialist"),
   ];
   @override
   Widget build(BuildContext context) {
@@ -41,13 +45,14 @@ class _AllHealthProblemsViewState extends State<AllHealthProblemsView> {
 
           Container(width: double.infinity, height: 1, color: line_gray_e2e2e6,),
 
-          SizedBox(height: 21.h,),
+          // SizedBox(height: 21.h,),
 
           Expanded(
             child: ListView.builder(
               scrollDirection: Axis.vertical,
               primary: false,
               shrinkWrap: true,
+              padding: EdgeInsets.only(top: 21.h),
               itemCount: healthProblemList.length,
               itemBuilder: (context, i) =>
                   Container(
