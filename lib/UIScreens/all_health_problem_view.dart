@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:ths_user_app/Model/HealthProblemModel.dart';
+import 'package:ths_user_app/Model/healthProblem_model.dart';
 import 'package:ths_user_app/Styles/my_colors.dart';
 import 'package:ths_user_app/Styles/my_font.dart';
 import 'package:ths_user_app/Styles/my_icons.dart';
