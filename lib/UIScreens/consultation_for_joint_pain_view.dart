@@ -18,7 +18,7 @@ class ConsultationForJointPainView extends StatefulWidget {
 }
 
 class _ConsultationForJointPainViewState extends State<ConsultationForJointPainView> {
-  List<ConsultationModel> consultationList = [
+  List<ConsultationModel> consultationList =[
     ConsultationModel(img_food1,"Dr. 123 Patel","Orthopedist","9 Years","455","4:30 pm"),
     ConsultationModel(img_food2,"Dr. Niraj Patel","Orthopedist","9 Years","455","4:30 pm"),
     ConsultationModel(img_food3,"Dr. Niraj Patel","Orthopedist","9 Years","455","4:30 pm"),
@@ -29,6 +29,7 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
     ConsultationModel(img_food2,"Dr. Niraj Patel","Orthopedist","9 Years","455","4:30 pm"),
     ConsultationModel(img_food3,"Dr. Niraj Patel","Orthopedist","9 Years","455","4:30 pm"),
   ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
@@ -294,7 +295,6 @@ class _ConsultationForJointPainViewState extends State<ConsultationForJointPainV
                                 padding: EdgeInsets.symmetric(horizontal: 0, vertical: 16.h),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(18.r),
-                                  // side: BorderSide(color: skygreen_24d39e, width: 0),
                                 ),
                               )),
                         ),
