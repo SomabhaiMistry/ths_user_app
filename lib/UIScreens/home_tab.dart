@@ -85,7 +85,7 @@ class _HomeTabState extends State<HomeTab> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
 
-                              SvgPicture.asset(icon_ca)
+                              // SvgPicture.asset(icon_ca)
                             ],
                           )
 
