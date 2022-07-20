@@ -209,7 +209,7 @@ class _HomeTabState extends State<HomeTab> {
                                   mainAxisAlignment: MainAxisAlignment.start,
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
-                                    SvgPicture.asset(icon_cancel_close),
+                                    SvgPicture.asset(icon_rotate),
                                     SizedBox(width: 6.w,),
                                     Text(str_reschedule,style: TextStyle(
                                         fontSize: 14.sp,fontFamily: fontInterMedium,
@@ -339,7 +339,7 @@ class _HomeTabState extends State<HomeTab> {
                                 Text(str_rate_our_service,style: TextStyle(
                                   fontSize: 14.sp,fontFamily: fontInterMedium,color: title_black_15181e
                                 ),),
-                                SizedBox(width: 11.w,),
+                                SizedBox(width: 5.w,),
                                 Center(
                                   child: RatingBar(
                                       itemSize: 35,
@@ -348,13 +348,13 @@ class _HomeTabState extends State<HomeTab> {
                                       direction: Axis.horizontal,
                                       allowHalfRating: true,
                                       itemCount: 5,
-                                      itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
+                                      itemPadding: EdgeInsets.symmetric(horizontal: 0.0),
                                       ratingWidget: RatingWidget(
-                                          full: Image.asset(img_star_rating_fill,width: 25.w,height: 25.h),
+                                          full: Image.asset(img_star_rating_fill,width: 60.w,height: 60.h),
                                           // full: const Icon(Icons.star, color:yellow_FFC800),
-                                          half:Image.asset(img_star_rating_fill,width: 25.w,height: 25.h),
+                                          half:Image.asset(img_star_rating_fill,width: 60.w,height: 60.h),
                                           // half: const Icon(Icons.star_half, color:yellow_FFC800,),
-                                          empty: Image.asset(img_star_rating_empty,width: 25.w,height: 25.h),),
+                                          empty: Image.asset(img_star_rating_empty,width: 60.w,height: 60.h),),
                                       // empty: const Icon(Icons.star_outline, color:gray_868590,)),
                                       onRatingUpdate: (value) {
                                         setState(() {
