@@ -9,6 +9,7 @@ const img_food1 = 'assets/images/img_food1.png';
 const img_food2 = 'assets/images/img_food2.png';
 const img_food3 = 'assets/images/img_food3.png';
 const img_like = 'assets/images/img_like.png';
+const img_home_tab_bg = 'assets/images/img_home_tab_bg.png';
 
 
 
@@ -22,3 +23,8 @@ const icon_other = 'assets/images/icon_other.svg';
 const icon_thumb = 'assets/images/icon_thumb.svg';
 const icon_circle_grey = 'assets/images/icon_circle_grey.svg';
 const icon_circle_green = 'assets/images/icon_circle_green.svg';
+const icon_home = 'assets/images/icon_home.svg';
+const icon_consultation = 'assets/images/icon_consultation.svg';
+const icon_lab_test = 'assets/images/icon_lab_test.svg';
+const icon_wallet = 'assets/images/icon_wallet.svg';
+const icon_more = 'assets/images/icon_more.svg';

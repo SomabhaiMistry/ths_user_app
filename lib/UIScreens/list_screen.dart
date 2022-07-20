@@ -6,13 +6,12 @@ import 'package:ths_user_app/UIScreens/personal_information_view.dart';
 import 'package:ths_user_app/UIScreens/select_subscription_plan_view.dart';
 import 'package:ths_user_app/UIScreens/select_time_sloat_view.dart';
 import 'package:ths_user_app/UIScreens/spalsh_screen_view.dart';
-import 'package:ths_user_app/UIScreens/test.dart';
 
 import 'MultiStoreOrderDetail.dart';
 import 'about_your_problem_view.dart';
 import 'all_health_problem_view.dart';
 import 'consultation_for_joint_pain_view.dart';
-import 'demo.dart';
+import 'home_page_medical_view.dart';
 import 'login_via_mobile_view.dart';
 import 'otp_verification_view.dart';
 import 'select_your_city_view.dart';
@@ -79,7 +78,9 @@ class ListScreen extends StatelessWidget {
                           fontSize: 16.sp),
                     ),
                   ),
-                ),GestureDetector(
+                ),
+
+                GestureDetector(
                   onTap: () {
                     Navigator.push(
                         context,
@@ -155,25 +156,6 @@ class ListScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                // GestureDetector(
-                //   onTap: () {
-                //     Navigator.push(
-                //         context,
-                //         MaterialPageRoute(
-                //           builder: (context) => AboutYourProblemView(),
-                //         ));
-                //   },
-                //   child: Padding(
-                //     padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
-                //     child: Text(
-                //       "AboutYourProblem Screen",
-                //       style: TextStyle(
-                //           color: Colors.black87,
-                //           fontFamily: sfProDisplayMedium,
-                //           fontSize: 16.sp),
-                //     ),
-                //   ),
-                // ),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -255,13 +237,13 @@ class ListScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => LoginViaMobileView(),
+                          builder: (context) => HomePageMedicalView(),
                         ));
                   },
                   child: Padding(
                     padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
                     child: Text(
-                      "Test Screen",
+                      "HomePageMedicalView Screen",
                       style: TextStyle(
                           color: Colors.black87,
                           fontFamily: fontInterMedium,
