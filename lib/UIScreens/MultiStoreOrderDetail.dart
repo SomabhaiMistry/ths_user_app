@@ -92,7 +92,6 @@ class _MultiStoreOrderDetailState extends State<MultiStoreOrderDetail> {
             Expanded(
               flex: 1,
               child: SingleChildScrollView(
-
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
