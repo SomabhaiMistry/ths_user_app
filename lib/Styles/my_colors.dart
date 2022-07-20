@@ -21,6 +21,7 @@ const orange_f3a581 = Color(0xFFf3a581);
 const orange_light_f1eadc = Color(0xFFf1eadc);
 const smoke_f5f5f5 = Color(0xFFf5f5f5);
 const orange_df6129 = Color(0xFFdf6129);
+const light_orange_fcefe6 = Color(0xFFfcefe6);
 const light_orange_FCEFE6 = Color(0xFFFCEFE6);
 const black_4d5764 = Color(0xFF4d5764);
 const grdient1_999cffee = Color(0x999cffee);
