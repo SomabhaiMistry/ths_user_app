@@ -58,7 +58,7 @@ class _OtpVerificationViewState extends State<OtpVerificationView> {
           Expanded(
             child: Center(
               child: Container(
-                width: 180.w,
+                width: 150.w,
                 alignment: Alignment.topCenter,
                 child: Theme(
                   data: ThemeData(

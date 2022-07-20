@@ -9,6 +9,7 @@ import 'package:ths_user_app/UIScreens/personal_information_view.dart';
 import 'package:ths_user_app/UIScreens/select_time_sloat_view.dart';
 import 'package:ths_user_app/UIScreens/wallet_tab.dart';
 
+import '../Styles/my_colors.dart';
 import '../Styles/my_icons.dart';
 import 'consultations_tab.dart';
 import 'home_tab.dart';
@@ -71,28 +72,28 @@ class _HomePageMedicalViewState extends State<HomePageMedicalView> {
 
           items: [
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(icon_home,width: 25,height: 25,color: Colors.pink,),
-              activeIcon: SvgPicture.asset(icon_home,width: 25,height: 25,color: Colors.blue,),
+              icon: SvgPicture.asset(icon_home,width: 25,height: 25,color: inactive_8d8f91,),
+              activeIcon: SvgPicture.asset(icon_home,width: 25,height: 25,color:grays_424448,),
               label: "Home",
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(icon_consultation,width: 25,height: 25,color: Colors.black,),
-              activeIcon: SvgPicture.asset(icon_consultation,width: 25,height: 25,color: Colors.yellow,),
+              icon: SvgPicture.asset(icon_consultation,width: 25,height: 25,color:inactive_8d8f91,),
+              activeIcon: SvgPicture.asset(icon_consultation,width: 25,height: 25,color:grays_424448,),
               label: "Consultation",
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(icon_lab_test,width: 25,height: 25,),
-              activeIcon: SvgPicture.asset(icon_lab_test,width: 25,height: 25),
+              icon: SvgPicture.asset(icon_lab_test,width: 25,height: 25,color: inactive_8d8f91,),
+              activeIcon: SvgPicture.asset(icon_lab_test,width: 25,height: 25,color:grays_424448,),
               label: "Lab Test",
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(icon_wallet,width: 25,height: 25,),
-              activeIcon: SvgPicture.asset(icon_wallet,width: 25,height: 25),
+              icon: SvgPicture.asset(icon_wallet,width: 25,height: 25,color: inactive_8d8f91,),
+              activeIcon: SvgPicture.asset(icon_wallet,width: 25,height: 25,color:grays_424448,),
               label: "Wallet",
             ),
             BottomNavigationBarItem(
-              icon: SvgPicture.asset(icon_home,width: 25,height: 25,),
-              activeIcon: SvgPicture.asset(icon_home,width: 25,height: 25),
+              icon: SvgPicture.asset(icon_more,width: 25,height: 25,color: inactive_8d8f91,),
+              activeIcon: SvgPicture.asset(icon_more,width: 25,height: 25,color:grays_424448,),
               label: "More",
             ),
           ],

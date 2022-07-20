@@ -28,3 +28,6 @@ const icon_consultation = 'assets/images/icon_consultation.svg';
 const icon_lab_test = 'assets/images/icon_lab_test.svg';
 const icon_wallet = 'assets/images/icon_wallet.svg';
 const icon_more = 'assets/images/icon_more.svg';
+const icon_event_calender = 'assets/images/icon_event_calender.svg';
+const icon_cancel_close = 'assets/images/icon_cancel_close.svg';
+const icon_rotate = 'assets/images/icon_rotate.svg';
