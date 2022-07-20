@@ -88,7 +88,6 @@ class _HomeTabState extends State<HomeTab> {
                               // SvgPicture.asset(icon_ca)
                             ],
                           )
-
                         ],
                       ),
                     ),

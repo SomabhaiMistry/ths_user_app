@@ -5,7 +5,9 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../Model/MultiStoreOrderModel.dart';
+import '../Model/select_city_model.dart';
 import '../Styles/my_colors.dart';
+import '../Styles/my_font.dart';
 import '../Styles/my_icons.dart';
 
 
@@ -24,14 +26,14 @@ class _MultiStoreOrderDetailState extends State<MultiStoreOrderDetail> {
 
   List<String> _base = [
 
-    'Pin Name',
-    'Dmart',
-    'Deli Supermarket'
+    'Morning',
+    'Afternoon',
+    'Evening'
   ];
 
   List<Scenario> elencoSensori = [
     Scenario(
-      base: 'Pin Name',
+      base: 'Morning',
       titolo1: 'Sensor1',
       titolo2: 'Sensor2',
       titolo3: 'Sensor3',
@@ -46,7 +48,7 @@ class _MultiStoreOrderDetailState extends State<MultiStoreOrderDetail> {
       btnColor3: kBlueLight,
     ),
     Scenario(
-      base: 'Dmart',
+      base: 'Afternoon',
       titolo1: 'Sensor1',
       titolo2: 'Sensor2',
       titolo3: 'Sensor3',
@@ -61,7 +63,7 @@ class _MultiStoreOrderDetailState extends State<MultiStoreOrderDetail> {
       btnColor3: kBlueLight,
     ),
     Scenario(
-      base: 'Deli Supermarket',
+      base: 'Evening',
       titolo1: 'Sensor1',
       titolo2: 'Sensor2',
       icon1: Icons.sensors,
@@ -78,6 +80,21 @@ class _MultiStoreOrderDetailState extends State<MultiStoreOrderDetail> {
     MultiStoreOrderModel("bsdjkb", 'Product name \nin 2 line'),
     MultiStoreOrderModel("789", 'Product name \nin 2 line'),
 
+  ];
+
+  int myposition = -1;
+
+  List<SelectCityModel> onSelectCityModel = [
+    SelectCityModel('12:00 Pm'),
+    SelectCityModel('12:30 Am'),
+    SelectCityModel('01:00 Am'),
+    SelectCityModel('01:30 Am'),
+    SelectCityModel('02:00 Am'),
+    SelectCityModel('12:00 Pm'),
+    SelectCityModel('12:30 Am'),
+    SelectCityModel('01:00 Am'),
+    SelectCityModel('01:30 Am'),
+    SelectCityModel('02:00 Am'),
   ];
 
 
@@ -191,55 +208,30 @@ class _MultiStoreOrderDetailState extends State<MultiStoreOrderDetail> {
                                   initiallyExpanded: false,
                                   title: Row(
                                     children: [
-                                      ClipRRect(
-                                        borderRadius: BorderRadius.circular(6),
-                                        child: SvgPicture.asset(
-                                          icon_back_arrow,
-                                          fit: BoxFit.fill,
-                                          width: 65.w,height: 65.h,
-                                        ),
+
+
+                                      Text(
+                                          _base[index].toString(),
+                                          style:  TextStyle(
+                                              color: grays_424448,
+                                              fontFamily: fontInterMedium,
+                                              fontStyle:  FontStyle.normal,
+                                              fontSize: 14.sp
+                                          ),
+                                          textAlign: TextAlign.left
                                       ),
-                                      SizedBox(width: 16.w,),
-                                      Column(
-                                        mainAxisAlignment: MainAxisAlignment.start,
-                                        crossAxisAlignment: CrossAxisAlignment.start,
-                                        children: [
-                                          // Pin name
-                                          Text(
-                                              _base[index].toString(),
-                                              style:  TextStyle(
-                                                  color: black_4d5764,
-                                                  fontWeight: FontWeight.w700,
-                                                  fontStyle:  FontStyle.normal,
-                                                  fontSize: 18.sp
-                                              ),
-                                              textAlign: TextAlign.left
+                                      SizedBox(width: 4.h,),
+                                      // @rush
+                                      Text(
+                                          "Not available",
+                                          style:  TextStyle(
+                                              color: hint_txt_909196,
+                                              fontFamily: fontInterRegular,
+                                              fontWeight: FontWeight.w500,
+                                              fontStyle:  FontStyle.normal,
+                                              fontSize: 12.sp
                                           ),
-                                          SizedBox(height: 4.h,),
-                                          // @rush
-                                          Text(
-                                              "@rush",
-                                              style:  TextStyle(
-                                                  color: black_4d5764,
-                                                  fontWeight: FontWeight.w500,
-                                                  fontStyle:  FontStyle.normal,
-                                                  fontSize: 12.sp
-                                              ),
-                                              textAlign: TextAlign.left
-                                          ),
-                                          SizedBox(height: 4.h,),
-                                          // 5 items from 3 vendors
-                                          Text(
-                                              "5 items from 3  vendors",
-                                              style:  TextStyle(
-                                                  color:  const Color(0xff24d39e),
-                                                  fontWeight: FontWeight.w500,
-                                                  fontStyle:  FontStyle.normal,
-                                                  fontSize: 12.sp
-                                              ),
-                                              textAlign: TextAlign.left
-                                          )
-                                        ],
+                                          textAlign: TextAlign.left
                                       ),
                                     ],
                                   ),
@@ -255,121 +247,42 @@ class _MultiStoreOrderDetailState extends State<MultiStoreOrderDetail> {
                                               gridDelegate:
                                               SliverGridDelegateWithFixedCrossAxisCount(
                                                   crossAxisCount: 3,
-                                                  childAspectRatio: 0.60.h,
+                                                  childAspectRatio: 1.h,
+                                                  mainAxisExtent: 50,
                                                   mainAxisSpacing: 0.0,
                                                   crossAxisSpacing: 0.0),
-                                              itemCount: onMultiStoreOrderModel.length,
-                                              itemBuilder: (context, i) => Padding(
-                                                padding:  EdgeInsets.only(left: 8.w,right: 8.w),
+                                              itemCount: onSelectCityModel.length,
+                                              itemBuilder: (context, i) => GestureDetector(
+                                                onTap: (){
+                                                  setState(() {
+                                                    myposition = i;
+                                                  });
+                                                },
                                                 child: Column(
                                                   mainAxisAlignment: MainAxisAlignment.start,
                                                   crossAxisAlignment: CrossAxisAlignment.start,
                                                   children: [
-
-                                                    Stack(
-                                                      alignment: Alignment.bottomCenter,
-                                                      children: [
-                                                        // SvgPicture.asset(onMultiStoreOrderModel[i].tvTitle,width: double.infinity,height: 100,),
-                                                        Positioned(
-                                                          bottom: 67,right: 65,
-                                                          child: Padding(
-                                                            padding: const EdgeInsets.all(6.0),
-                                                            child: SvgPicture.asset(icon_forward,width: 18.w,height: 18.h,),
-                                                          ),
-                                                        ),
-                                                        Padding(
-                                                          padding: const EdgeInsets.only(bottom: 10),
-                                                          child: Container(
-                                                            decoration: BoxDecoration(
-                                                              borderRadius: BorderRadius.circular(50),
-                                                              color: Colors.white
-                                                            ),
-                                                            child: Row(
-                                                             mainAxisSize: MainAxisSize.min,
-                                                             children: <Widget>[
-
-                                                               // GestureDetector(
-                                                               //   onTap: (){
-                                                               //     setState(() {
-                                                               //       if (onMultiStoreOrderModel[i].counter > 0) {
-                                                               //         onMultiStoreOrderModel[i].counter--;
-                                                               //       }
-                                                               //     });
-                                                               //   },
-                                                               //   child: Container(
-                                                               //     height: 24.h,
-                                                               //     width: 24.w,
-                                                               //     decoration: BoxDecoration(
-                                                               //         shape: BoxShape.circle,
-                                                               //         color: black_4d5764
-                                                               //     ),
-                                                               //     child: Icon(Icons.remove,color: Colors.white,size: 14,),
-                                                               //   ),
-                                                               // ),
-                                                               SizedBox(width: 10.w,),
-                                                               Container(
-                                                                   width: 18.w,
-                                                                   child: Center(child: Text(onMultiStoreOrderModel[i].tvSubtitle.toString()))),
-                                                               SizedBox(width: 10.w,),
-                                                               // GestureDetector(
-                                                               //   onTap: (){
-                                                               //     setState(() {
-                                                               //       onMultiStoreOrderModel[i].counter++;
-                                                               //     });
-                                                               //   },
-                                                               //   child: Container(
-                                                               //     height: 24.h,
-                                                               //     width: 24.w,
-                                                               //     decoration: BoxDecoration(
-                                                               //         shape: BoxShape.circle,
-                                                               //         color: black_4d5764
-                                                               //     ),
-                                                               //     child: Icon(Icons.add,color: Colors.white,size: 14,),
-                                                               //   ),
-                                                               // ),
-                                                             ],
-                                                                ),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                    SizedBox(height: 6.h,),
-
-                                                    // Product name in 2 line
-                                                    Text(
-                                                        onMultiStoreOrderModel[i].tvTitle,
-                                                        style:  TextStyle(
-                                                            color:  orange_df6129,
-                                                            fontWeight: FontWeight.w500,
-                                                            fontStyle:  FontStyle.normal,
-                                                            fontSize: 14.sp
-                                                        ),
-                                                        textAlign: TextAlign.left
-                                                    ),
-
-                                                    // 2$ / kg
-                                                    Text(
-                                                        "2\$ / kg",
-                                                        style:  TextStyle(
-                                                            color:  orange_df6129,
-                                                            fontWeight: FontWeight.w500,
-                                                            fontStyle:  FontStyle.normal,
-                                                            fontSize: 12.sp
-                                                        ),
-                                                        textAlign: TextAlign.center
-                                                    ),
-
-                                                    // $4
-                                                    Text(
-                                                        "\$4",
-                                                        style:  TextStyle(
-                                                            color:  orange_df6129,
-                                                            fontWeight: FontWeight.w600,
-                                                            fontStyle:  FontStyle.normal,
-                                                            fontSize: 16.sp
-                                                        ),
-                                                        textAlign: TextAlign.left
-                                                    )
+                                                    Container(
+                                                     decoration:(
+                                                 BoxDecoration(
+                                                   borderRadius: BorderRadius.circular(40.r),
+                                                   border: Border.all(
+                                                     width: 1,
+                                                     color: myposition==i? orange_df6129:line_gray_e2e2e6,
+                                                   ),
+                                                   color: myposition==i? light_orange_fcefe6:Colors.white
+                                                 )
+                                                ),
+                                                     child: Padding(
+                                                       padding:  EdgeInsets.only(left: 15.w,right: 15.w,bottom: 8.h,top: 8.h),
+                                                       child: Text(onSelectCityModel[i].tvSelectCity,
+                                                         style: TextStyle(
+                                                           fontSize: 14.sp,
+                                                           fontFamily: fontInterMedium,
+                                                           color: myposition==i?orange_df6129:grays_424448
+                                                         ),),
+                                                     ),
+                                                   ),
 
                                                   ],
                                                 ),
@@ -385,7 +298,7 @@ class _MultiStoreOrderDetailState extends State<MultiStoreOrderDetail> {
                             ),
                          //   SizedBox(height: 10,),
                             Divider(
-                              color:orange_df6129,
+                              color:line_gray_e2e2e6,
                               // height: 15,
                               thickness: 1,
 
