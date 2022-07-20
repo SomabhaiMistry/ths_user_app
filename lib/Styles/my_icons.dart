@@ -10,6 +10,8 @@ const img_food2 = 'assets/images/img_food2.png';
 const img_food3 = 'assets/images/img_food3.png';
 const img_like = 'assets/images/img_like.png';
 const img_home_tab_bg = 'assets/images/img_home_tab_bg.png';
+const img_star_rating_fill = 'assets/images/img_star_rating_fill.png';
+const img_star_rating_empty = 'assets/images/img_star_rating_empty.png';
 
 
 
@@ -31,3 +33,5 @@ const icon_more = 'assets/images/icon_more.svg';
 const icon_event_calender = 'assets/images/icon_event_calender.svg';
 const icon_cancel_close = 'assets/images/icon_cancel_close.svg';
 const icon_rotate = 'assets/images/icon_rotate.svg';
+const icon_star_empty = 'assets/images/icon_star_empty.svg';
+const icon_star_fill = 'assets/images/icon_star_fill.svg';

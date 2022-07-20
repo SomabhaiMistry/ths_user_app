@@ -7,7 +7,6 @@ import 'package:ths_user_app/UIScreens/select_subscription_plan_view.dart';
 import 'package:ths_user_app/UIScreens/select_time_sloat_view.dart';
 import 'package:ths_user_app/UIScreens/spalsh_screen_view.dart';
 
-import 'MultiStoreOrderDetail.dart';
 import 'about_your_problem_view.dart';
 import 'all_health_problem_view.dart';
 import 'consultation_for_joint_pain_view.dart';
@@ -251,26 +250,6 @@ class ListScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                GestureDetector(
-                  onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => MultiStoreOrderDetail(),
-                        ));
-                  },
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 12.h,horizontal: 12.w),
-                    child: Text(
-                      "Demo Screen",
-                      style: TextStyle(
-                          color: Colors.black87,
-                          fontFamily: fontInterMedium,
-                          fontSize: 16.sp),
-                    ),
-                  ),
-                ),
-
               ],
             ),
           ),

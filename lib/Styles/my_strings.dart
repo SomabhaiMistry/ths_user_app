@@ -73,3 +73,7 @@ var str_for_rushabh_patel = "For Rushabh Patel";
 var str_problem = "Problem : Bones & Joint";
 var str_cancle_appointment = "Cancle Appointment";
 var str_reschedule = "Reschedule";
+var str_date_time_schedule = "Scheduled on 21/06/2022 at 4:30 Pm";
+var str_upcoming_consultations = "Upcoming Consultations";
+var str_complete_date_time = "Completed on 21/06/2022 at 4:30 Pm";
+var str_rate_our_service = "Rate Our Service";
